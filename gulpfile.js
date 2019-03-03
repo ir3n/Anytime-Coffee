@@ -1,7 +1,10 @@
+"use strict";
+
 const gulp = require("gulp"),
   browsersync = require("browser-sync").create(),
   sass = require("gulp-sass"),
-  autoprefixer = require("gulp-autoprefixer");
+  postcss = require("gulp-postcss"),
+  autoprefixer = require("autoprefixer");
 
 function browserSync(done) {
   browsersync.init({
@@ -22,7 +25,7 @@ function css() {
   return gulp
     .src("./app/assets/scss/*.scss")
     .pipe(sass())
-    .pipe(autoprefixer())
+    .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest("./app/temp/css/"))
     .pipe(browsersync.stream());
 }

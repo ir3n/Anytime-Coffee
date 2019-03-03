@@ -1,0 +1,4 @@
+.class {
+  transition: all 0.3s;
+  -webkit-columns: 3;
+          columns: 3; }
