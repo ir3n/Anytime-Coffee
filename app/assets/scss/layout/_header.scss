@@ -1,0 +1,43 @@
+.hero {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &--image {
+    display: block;
+    filter: sepia(10%);
+  }
+
+  &--text-content {
+    position: absolute;
+    text-align: center;
+    color: $mainBeige;
+    width: 100%;
+    bottom: 0.5rem;
+    letter-spacing: 0.2rem;
+    line-height: 2.5rem;
+
+    @include sm {
+      width: 70%;
+      top: 10%;
+      transform: translateY(60%);
+      right: -5%;
+    }
+
+    @include md {
+      color: $mainBrown;
+      width: 40%;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      line-height: 3rem;
+      letter-spacing: 0.1rem;
+    }
+
+    @include lg {
+      line-height: 4.5rem;
+      letter-spacing: 0.2rem;
+      left: 5%;
+    }
+  }
+}

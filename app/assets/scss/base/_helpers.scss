@@ -1,0 +1,181 @@
+.wrapper {
+  padding: 1rem 0;
+  overflow: hidden;
+
+  @include sm {
+    padding-top: 2rem;
+  }
+  @include md {
+    padding: 1.875rem 4rem;
+  }
+
+  @include lg {
+    padding: 1.875rem 2.5rem;
+  }
+
+  &--col-2 {
+    width: 100%;
+
+    @include md {
+      width: 50%;
+      height: 100%;
+      float: left;
+    }
+  }
+
+  &--col-3 {
+    padding-bottom: 2.5rem;
+    text-align: center;
+
+    @include lg {
+      float: left;
+      width: 33.33%;
+      padding: 2rem 1rem;
+    }
+  }
+
+  &--col-4 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 1.375rem;
+    margin-top: 1rem;
+
+    @include sm {
+      width: 60%;
+    }
+
+    @include md {
+      float: left;
+      width: 50%;
+    }
+
+    @include lg {
+      width: 25%;
+      float: left;
+      margin-top: 2rem;
+    }
+  }
+
+  &--deals-box {
+    width: 95%;
+    padding: 0.5rem 1rem 1.5rem 1rem;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(224, 207, 150, 0.54);
+    color: $mainBrown;
+    border-radius: 10px;
+    font-size: 1rem;
+
+    @include sm {
+      width: 80%;
+      font-size: 1.1rem;
+    }
+
+    @include md {
+      width: 50%;
+    }
+    @include lg {
+      font-size: 1.2rem;
+    }
+  }
+  &--bigger-p {
+    padding: 1rem 4rem 4rem 4rem;
+
+    @include md {
+      padding: 2rem 5rem 0 5rem;
+    }
+
+    @include lg {
+      padding: 2rem 7rem 0 7rem;
+    }
+  }
+
+  &--disp-later {
+    display: none;
+
+    @include md {
+      display: block;
+    }
+  }
+}
+
+.row {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  @include sm {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  @include md {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  @include lg {
+    padding-left: 0.3;
+    padding-right: 0.3;
+  }
+
+  &--centered {
+    text-align: center;
+  }
+}
+
+.headline {
+  text-transform: uppercase;
+  font-weight: 300;
+
+  &--big {
+    font-size: 2rem;
+
+    @include lg {
+      font-size: 2.7rem;
+    }
+  }
+
+  &--section {
+    font-size: 2rem;
+
+    @include lg {
+      font-size: 2.7rem;
+    }
+  }
+
+  &--medium {
+    font-size: 1.5rem;
+
+    @include lg {
+      font-size: 2.2rem;
+    }
+  }
+
+  &--sm {
+    text-align: center;
+    font-size: 1.1rem;
+
+    @include lg {
+      font-size: 1.2rem;
+      padding-top: 1rem;
+    }
+  }
+
+  &--smaller {
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+
+    @include sm {
+      font-size: 1.5rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    @include md {
+      font-size: 1.7rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+}

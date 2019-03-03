@@ -23,7 +23,7 @@ function browserSyncReload(done) {
 
 function css() {
   return gulp
-    .src("./app/assets/scss/*.scss")
+    .src("./app/assets/scss/**/*.scss")
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest("./app/temp/css/"))
@@ -31,8 +31,8 @@ function css() {
 }
 
 function watchFiles() {
-  gulp.watch("./app/assets/scss/*", css);
-  gulp.watch("src/*.html", browserSyncReload);
+  gulp.watch("./app/assets/scss/**/*.scss", css);
+  gulp.watch("./app/*.html", browserSyncReload);
 }
 
 const watch = gulp.parallel(watchFiles, browserSync);

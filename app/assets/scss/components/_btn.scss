@@ -1,0 +1,76 @@
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: normal;
+  padding: 0.7rem;
+  color: $mainBeige;
+  background-color: $mainRed;
+  border: 1px solid $mainRed;
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.1rem;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+
+  @include md {
+    margin-top: 1rem;
+    padding: 0.5rem;
+  }
+  @include lg {
+    margin-top: 1.5rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
+.btn:hover,
+.btn:active {
+  background-color: $btn-hover;
+  border: 1px solid $btn-hover;
+}
+
+.btn--ghost:link,
+.btn--ghost:visited,
+input[type="submit"] {
+  color: $mainRed;
+  background-color: transparent;
+  margin-left: 0.5rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+
+  @include sm {
+    margin-left: 0.3rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+  @include lg {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.btn--ghost:hover,
+.btn--ghost:active {
+  color: $mainBeige;
+  background-color: $mainRed;
+  border: 1px solid $mainRed;
+}
+
+.btn--full-body:link,
+.btn--full-body:visited {
+  transition: border 0.2s, border-radius 0.2s;
+}
+
+.btn--full-body:hover,
+.btn--full-body:active {
+  border: 1px solid $mainBeige;
+  border-radius: 10px;
+  padding: 1.9375rem 1.3125rem;
+
+  h4 {
+    color: $mainRed;
+  }
+}
+
+.btn--deals {
+  margin: 0 auto;
+}

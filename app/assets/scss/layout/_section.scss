@@ -1,0 +1,9 @@
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @include lg {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}

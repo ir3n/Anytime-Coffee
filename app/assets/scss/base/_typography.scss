@@ -1,0 +1,19 @@
+body {
+  font-family: "Lato", "Arial", sans-serif;
+  color: $mainBrown;
+  font-weight: 300;
+  font-size: 1.1rem;
+
+  @include lg {
+    font-size: 1.25rem;
+  }
+}
+
+.generic-text {
+  font-weight: 300;
+  font-size: 1.1rem;
+
+  @include lg {
+    font-size: 1.25rem;
+  }
+}

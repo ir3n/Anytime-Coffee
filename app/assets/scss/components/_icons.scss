@@ -1,0 +1,8 @@
+.icon {
+  font-size: 3rem;
+  color: $mainRed;
+
+  @include lg {
+    font-size: 4rem;
+  }
+}
