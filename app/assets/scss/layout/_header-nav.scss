@@ -1,0 +1,67 @@
+header {
+  position: absolute;
+  height: 4.5rem;
+  width: 100%;
+  z-index: 3;
+
+  nav {
+    @include md {
+      top: 0;
+      width: 100%;
+      padding-top: 0.3rem;
+      padding-bottom: 0.2rem;
+      /* background-color: rgba(237, 196, 170, 0.5); */
+    }
+
+    .logo {
+      height: 55px;
+      margin-top: 0.3rem;
+
+      @include md {
+        float: left;
+      }
+      @include lg {
+        height: 60px;
+      }
+    }
+
+    ul {
+      display: none;
+
+      @include md {
+        list-style: none;
+        float: right;
+        margin-top: 0.5rem;
+        display: inline-block;
+      }
+
+      li {
+        display: inline-block;
+        margin-left: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        a:link,
+        a:visited {
+          color: $mainBrown;
+          border-bottom: 2px solid transparent;
+          transition: border-bottom 0.2s;
+          padding-bottom: 0.3rem;
+
+          @include lg {
+            font-size: 1.1rem;
+          }
+        }
+
+        a:hover,
+        a:active {
+          border-bottom: 2px solid $mainRed;
+
+          @include lg {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}

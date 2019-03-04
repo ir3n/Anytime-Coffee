@@ -22,8 +22,8 @@
 
   <body>
     <header>
-      <nav>
-        <div class="row">
+      <div class="row">
+        <nav>
           <img
             class="logo"
             src="assets/images/anytime-coffee-logo.png"
@@ -35,11 +35,11 @@
             <li><a href="#">Our Deals</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
-    <div class="hero">
+    <section id="hero">
       <picture>
         <source
           srcset="
@@ -62,22 +62,18 @@
           "
           media="(min-width: 480px)"
         />
-        <img
-          srcset="assets/images/hero.jpg"
-          class="hero--image"
-          alt="Woman enjoying her coffee"
-        />
+        <img srcset="assets/images/hero.jpg" alt="Woman enjoying her coffee" />
       </picture>
 
-      <div class="hero--text-content">
+      <div class="hero-text-content">
         <h1 class="headline headline--medium">Your coffee</h1>
-        <h2 class="headline headline--big">Our priority</h2>
+        <h2 class="headline headline--section">Our priority</h2>
         <a href="#" class="btn">Need coffee now!</a>
         <a href="#" class="btn btn--ghost">Show me more</a>
       </div>
-    </div>
+    </section>
 
-    <section class="intro">
+    <section id="intro">
       <div class="row row--centered">
         <h2 class="headline headline--section">who we are</h2>
         <div class="line"></div>
@@ -121,7 +117,7 @@
       <img class="intro--img" src="assets/images/coffee-beans.png" />
     </section>
 
-    <section class="deals">
+    <section id="deals">
       <div class="row wrapper">
         <div class="row--centered">
           <h2 class="headline headline--section">our deals</h2>
@@ -204,7 +200,7 @@
       </div>
     </section>
 
-    <section class="snacks">
+    <section id="snacks">
       <div class="wrapper--col-2 wrapper--disp-later">
         <ul>
           <li>
@@ -247,5 +243,165 @@
         </div>
       </div>
     </section>
+
+    <section id="how">
+      <div class="wrapper--col-2 wrapper--col-2-fullheight">
+        <div class="wrapper">
+          <h2 class="headline headline--medium">How it works</h2>
+          <div class="line"></div>
+        </div>
+        <div class="wrapper--bigger-p">
+          <div class="num">1.</div>
+          <p>
+            Choose the subscription plan that best fits your needs and sign up
+            today.
+          </p>
+          <div class="num">2.</div>
+          <p>
+            Order your coffee using your mobile app, website or give us a call!
+          </p>
+          <div class="num">3.</div>
+          <p>Enjoy your coffee... Anytime!</p>
+          <a href="#"
+            ><img
+              src="assets/images/apple-app-store-icon.png"
+              alt="Apple app-store icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="assets/images/download-app-android.png"
+              alt="Android Google Play"
+          /></a>
+        </div>
+      </div>
+      <div class="wrapper--col-2 how-bg wrapper--col-2-fullheight"></div>
+    </section>
+
+    <section id="testimonials">
+      <div class="row row--centered">
+        <h2 class="headline headline--section">Our customers love us!</h2>
+        <div class="line"></div>
+        <div class="wrapper">
+          <p>
+            Our top priority is our customers' satisfaction and their kind words
+            are always rewarding.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="wrapper wrapper--flex">
+          <div class="wrapper--col-3 wrapper--flex">
+            <div class="wrapper--bg-box">
+              <img src="assets/images/John%20Smith.jpg" alt="John Smith" />
+              <h5>John Smith</h5>
+              "The service is impeccable! Always on time and with great coffee
+              and snacks. The deals are also great."
+            </div>
+          </div>
+          <div class="wrapper--col-3 wrapper--flex">
+            <div class="wrapper--bg-box">
+              <img
+                src="assets/images/Helena%20Stergiou.jpg"
+                alt="Helena Stergiou"
+              />
+              <h5>Helena Stergiou</h5>
+              "I chose the full- month deal and I am more than satisfied. My
+              coffee comes at work every day at the same time and the breakfast
+              is perfect!"
+            </div>
+          </div>
+          <div class="wrapper--col-3 wrapper--flex">
+            <div class="wrapper--bg-box">
+              <img src="assets/images/Billy%20Pan.jpg" alt="Billy Pan" />
+              <h5>Billy Pan</h5>
+              "Perfect coffee and the most delicious snacks, always fresh,
+              indeed! Great service and good deals, too."
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrapper--col-2 contact-bg">
+        <h3 class="headline headline--smaller">Contact us ... anytime!</h3>
+        <div class="line line--small-red"></div>
+
+        <form>
+          <div class="wrapper--col-3">
+            <label for="name">Name</label>
+          </div>
+          <div class="wrapper--col-2">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your name"
+              required
+            />
+          </div>
+          <div class="wrapper--col-3">
+            <label for="name">Email</label>
+          </div>
+          <div class="wrapper--col-2">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Your email"
+              required
+            />
+          </div>
+          <div class="wrapper--col-3">
+            <label>Newsletter?</label>
+          </div>
+          <div class="wrapper--col-2">
+            <input type="checkbox" name="news" id="news" checked />Yes, please.
+          </div>
+          <div class="wrapper--col-3">
+            <label>Tell us what you think!</label>
+          </div>
+          <div class="wrapper--col-2">
+            <textarea
+              name="message"
+              placeholder="Your message here..."
+            ></textarea>
+          </div>
+          <div class="wrapper--col-3">
+            <label>&nbsp;</label>
+          </div>
+          <div class="wrapper--col-2 centered">
+            <input type="submit" value="Send" class="btn" />
+          </div>
+        </form>
+      </div>
+
+      <div class="wrapper--col-2">
+        <h3 class="headline headline--smaller">We are here</h3>
+        <div class="line line--small-red"></div>
+        <div id="controls"></div>
+        <div id="gmap" style="width:300px;height:250px;"></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="wrapper--col-2 lineheight">
+          +302410214216 <br />
+          Thoukididou 1, Larissa <br />
+          41222
+        </div>
+        <div class="wrapper--col-2">
+          <a href="#"><i class="icon ion-logo-facebook"></i></a>
+          <a href="#"><i class="icon ion-logo-instagram"></i></a>
+          <a href="#"><i class="icon ion-logo-twitter"></i></a>
+          <a href="#"><i class="icon ion-logo-googleplus"></i></a>
+        </div>
+      </div>
+      <div class="row row--centered smaller">
+        Copyright &copy; 2018 by Anytime Coffee. <br />
+        All rights reserved.
+      </div>
+    </footer>
   </body>
 </html>

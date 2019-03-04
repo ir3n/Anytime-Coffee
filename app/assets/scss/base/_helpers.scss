@@ -128,14 +128,6 @@
   text-transform: uppercase;
   font-weight: 300;
 
-  &--big {
-    font-size: 2rem;
-
-    @include lg {
-      font-size: 2.7rem;
-    }
-  }
-
   &--section {
     font-size: 2rem;
 

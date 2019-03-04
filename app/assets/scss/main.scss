@@ -7,12 +7,16 @@
 @import "base/helpers";
 @import "base/typography";
 
-@import "layout/deals";
-@import "layout/header";
-@import "layout/intro";
-@import "layout/nav";
+@import "layout/deals-section";
+@import "layout/header-nav";
+@import "layout/intro-section";
+@import "layout/hero-section";
 @import "layout/section";
-@import "layout/snacks";
+@import "layout/snacks-section";
+@import "layout/contact-section";
+@import "layout/how-section";
+@import "layout/footer";
+@import "layout/testimonials-section";
 
 @import "components/btn";
 @import "components/icons";
