@@ -35,6 +35,9 @@
   float: right;
 }
 
+@mixin absolute {
+  position: absolute;
+}
 @mixin bg-image {
   background-size: cover;
   background-position: center;
@@ -42,4 +45,14 @@
 
 @mixin transition {
   transition: all 0.3s;
+}
+@mixin scale {
+  transform: scale(1.2);
+}
+
+@mixin beige-bg {
+  background-color: hsla(34, 51%, 74%, 0.705);
+}
+@mixin dark-bg {
+  background-color: rgba(0, 0, 0, 0.788);
 }

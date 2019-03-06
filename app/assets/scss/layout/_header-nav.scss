@@ -1,10 +1,10 @@
 header {
-  // position: absolute;
   height: 5rem;
   width: 100%;
   z-index: 3;
   align-content: center;
   @include grid;
+  @include absolute;
 
   i#menu-button {
     font-size: 1.4rem;
@@ -21,6 +21,7 @@ header {
       display: none;
     }
   }
+
   .logo {
     height: 3.5rem;
     grid-column: 1 / 3;

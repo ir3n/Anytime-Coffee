@@ -17,8 +17,7 @@
     height: 1px;
     background-color: $mainBeige;
     width: 10%;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin: 2rem auto;
 
     @include lg {
       width: 25%;
@@ -27,8 +26,8 @@
 
   &-small-red {
     background-color: $mainRed;
-    width: 10%;
+    width: 5%;
     height: 1px;
-    margin-top: 10px;
+    margin: 0 auto;
   }
 }

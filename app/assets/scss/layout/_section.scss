@@ -1,8 +1,10 @@
 section {
   position: relative;
-  @include grid;
+  width: 100%;
+  height: auto;
 
   @include md {
     height: 100vh;
+    @include grid;
   }
 }

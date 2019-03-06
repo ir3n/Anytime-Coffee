@@ -1,5 +1,22 @@
 .container {
   grid-column: 2 / 12;
+  height: auto;
+}
+
+.container-smaller {
+  grid-column: 3 / 11;
+  @include center;
+}
+
+.row {
+  grid-column: span 12;
+  padding-top: 3rem;
+  @include center;
+}
+
+.row-grid {
+  @include grid;
+  @include center;
 }
 
 form {

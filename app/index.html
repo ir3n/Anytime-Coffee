@@ -41,39 +41,16 @@
     </header>
 
     <section id="hero">
-      <div class="hero-text-content">
-        <h1>
-          Your coffee <br />
-          <span class="bigger">Our priority</span>
-        </h1>
-        <button class="btn"><a href="#deals">Need coffee now!</a></button>
-        <button class="btn-ghost"><a href="#intro">Show me more</a></button>
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>
+            Your coffee <br />
+            <span class="bigger">Our priority</span>
+          </h1>
+          <button><a href="#deals">Need coffee now!</a></button>
+          <button class="btn-ghost"><a href="#intro">Show me more</a></button>
+        </div>
       </div>
-
-      <picture>
-        <source
-          srcset="
-            assets/images/hero--large.jpg        1925w,
-            assets/images/hero--large-hi-dpi.jpg 3850w
-          "
-          media="(min-width: 1024px)"
-        />
-        <source
-          srcset="
-            assets/images/hero--medium.jpg        1024w,
-            assets/images/hero--medium-hi-dpi.jpg 2048w
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            assets/images/hero--small.jpg         768w,
-            assets/images/hero--small-hi-dpi.jpg 1536w
-          "
-          media="(min-width: 480px)"
-        />
-        <img srcset="assets/images/hero.jpg" alt="Woman enjoying her coffee" />
-      </picture>
     </section>
 
     <section id="intro">
@@ -81,7 +58,7 @@
         <h2>who we are</h2>
         <div class="line"></div>
       </div>
-      <div class="wrapper">
+      <div class="container-smaller">
         <p>
           We are your new premium coffee delivery service. <br />
           Either it is when you wake up, at work or in any part of your day, let
@@ -90,34 +67,34 @@
         </p>
       </div>
 
-      <div class="row">
-        <div class="wrapper">
-          <i class="fas fa-infinity"></i>
-          <h3>up to 365 / year</h3>
-          <p>
-            With your subscription you are provided by up-to-365 days per year
-            coverage. You just choose the plan that suits your coffee needs.
-          </p>
-        </div>
-        <div class="wrapper">
-          <i class="far fa-star"></i>
-          <h3>best quality coffee</h3>
-          <p>
-            Our skilled baristas prepare the best beverages for you, using the
-            best quality materials.
-          </p>
-        </div>
-        <div class="wrapper">
-          <i class="far fa-clock"></i>
-          <h3>always on time</h3>
-          <p>
-            Your coffee always arrives on schedule. Our delivery services are
-            great so you can enjoy your coffee on time!
-          </p>
+      <div class="container">
+        <div class="row-grid">
+          <div class="card1-of-3">
+            <i class="fas fa-infinity"></i>
+            <h3>up to 365 / year</h3>
+            <p>
+              With your subscription you are provided by up-to-365 days per year
+              coverage. You just choose the plan that suits your coffee needs.
+            </p>
+          </div>
+          <div class="card1-of-3">
+            <i class="far fa-star"></i>
+            <h3>best quality coffee</h3>
+            <p>
+              Our skilled baristas prepare the best beverages for you, using the
+              best quality materials.
+            </p>
+          </div>
+          <div class="card1-of-3">
+            <i class="far fa-clock"></i>
+            <h3>always on time</h3>
+            <p>
+              Your coffee always arrives on schedule. Our delivery services are
+              great so you can enjoy your coffee on time!
+            </p>
+          </div>
         </div>
       </div>
-
-      <img class="intro-img" src="assets/images/coffee-beans.png" />
     </section>
 
     <section id="deals">
@@ -126,80 +103,82 @@
         <div class="line"></div>
       </div>
 
-      <div class="card">
-        <a href="#">
-          <h4>full - month deal</h4>
-          <ul>
-            <li>30 days / month</li>
-            <li>1.5&euro; / beverage</li>
-            <li>1 mini-croissant</li>
-            <li>free breakfast: 2 days</li>
-          </ul>
-          <div class="line-small"></div>
-          <h4>
-            50&euro; / month <br />
-            (save 15&euro;)
-          </h4>
-        </a>
-      </div>
-      <div class="card">
-        <a href="#">
-          <h4>25 - days deal</h4>
-          <ul>
-            <li>25 days / month</li>
-            <li>1.5&euro; / beverage</li>
-            <li>1 mini-croissant</li>
-            <li>free breakfast: 1 day</li>
-          </ul>
-          <div class="line-small"></div>
-          <h4>
-            40&euro; / month<br />
-            (save 12&euro;)
-          </h4>
-        </a>
-      </div>
-      <div class="card">
-        <a href="#">
-          <h4>half - month deal</h4>
-          <ul>
-            <li>15 days / month</li>
-            <li>1.5&euro; / beverage</li>
-            <li>1 mini-croissant</li>
-            <li class="no-icon">&nbsp;</li>
-          </ul>
-          <div class="line-small"></div>
-          <h4>
-            25&euro; / month<br />
-            (save 7&euro;)
-          </h4>
-        </a>
-      </div>
-      <div class="card">
-        <a href="#">
-          <h4>one - time deal</h4>
-          <ul>
-            <li>1 beverage</li>
-            <li>2&euro; / beverage</li>
-            <li>2 mini- cookies</li>
-            <li class="no-icon">&nbsp;</li>
-          </ul>
-          <div class="line-small"></div>
-          <h4>
-            2&euro; <br />
-            &nbsp;
-          </h4>
-        </a>
+      <div class="container">
+        <div class="row-grid">
+          <div class="card1-of-4">
+            <a href="#">
+              <h5>full - month deal</h5>
+              <ul>
+                <li>30 days / month</li>
+                <li>1.5&euro; / beverage</li>
+                <li>1 mini-croissant</li>
+                <li>free breakfast: 2 days</li>
+              </ul>
+              <div class="line-small"></div>
+              <h5>
+                50&euro; / month <br />
+                (save 15&euro;)
+              </h5>
+            </a>
+          </div>
+          <div class="card1-of-4">
+            <a href="#">
+              <h5>25 - days deal</h5>
+              <ul>
+                <li>25 days / month</li>
+                <li>1.5&euro; / beverage</li>
+                <li>1 mini-croissant</li>
+                <li>free breakfast: 1 day</li>
+              </ul>
+              <div class="line-small"></div>
+              <h5>
+                40&euro; / month<br />
+                (save 12&euro;)
+              </h5>
+            </a>
+          </div>
+          <div class="card1-of-4">
+            <a href="#">
+              <h5>half - month deal</h5>
+              <ul>
+                <li>15 days / month</li>
+                <li>1.5&euro; / beverage</li>
+                <li>1 mini-croissant</li>
+                <li class="no-icon">&nbsp;</li>
+              </ul>
+              <div class="line-small"></div>
+              <h5>
+                25&euro; / month<br />
+                (save 7&euro;)
+              </h5>
+            </a>
+          </div>
+          <div class="card1-of-4">
+            <a href="#">
+              <h5>one - time deal</h5>
+              <ul>
+                <li>1 beverage</li>
+                <li>2&euro; / beverage</li>
+                <li>2 mini- cookies</li>
+                <li class="no-icon">&nbsp;</li>
+              </ul>
+              <div class="line-small"></div>
+              <h5>
+                2&euro; <br />
+                &nbsp;
+              </h5>
+            </a>
+          </div>
+        </div>
       </div>
 
       <div class="row">
-        <div class="wrapper">
-          <h4>new here?</h4>
-          <div class="line-small-red"></div>
-          <button><a href="#">Sign up now</a></button>
-          <p>
-            and get a one - week trial for the price of 1.5&euro; / beverage!
-          </p>
-        </div>
+        <h4>new here?</h4>
+        <div class="line-small-red"></div>
+        <button><a href="#">Sign up now</a></button>
+        <p>
+          and get a one - week trial for the price of 1.5&euro; / beverage!
+        </p>
       </div>
     </section>
 

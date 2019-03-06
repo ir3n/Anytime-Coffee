@@ -1,26 +1,8 @@
 section#intro {
-  position: relative;
+  grid-template-rows: 10rem 9rem auto;
+  background-color: $lightGray;
 
-  @include lg {
-    background-image: url(/assets/images/intro-bg.jpg);
-    background-size: cover;
-    background-position: right;
-  }
-
-  &--img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 100px;
-    width: auto;
-    margin-top: -5rem;
-
-    @include md {
-      height: 150px;
-    }
-
-    @include lg {
-      display: none;
-    }
+  h3 {
+    white-space: nowrap;
   }
 }

@@ -1,0 +1,32 @@
+button {
+  font-size: 1.3rem;
+  padding: 0.6rem;
+  margin-top: 2rem;
+  border: 1px solid $mainRed;
+  background-color: $mainRed;
+  @include transition;
+
+  &:hover {
+    border: 1px solid $darkRed;
+    background-color: $darkRed;
+  }
+
+  a {
+    color: $mainBeige;
+    padding: 0.6rem 1rem;
+  }
+}
+
+.btn-ghost {
+  background-color: transparent;
+  margin-left: 1rem;
+
+  a {
+    color: $mainRed;
+    @include transition;
+
+    &:hover {
+      color: $mainBeige;
+    }
+  }
+}

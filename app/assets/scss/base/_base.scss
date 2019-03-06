@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 a {
@@ -11,4 +15,12 @@ a {
 
 ul {
   list-style: none;
+}
+
+h3,
+h5 {
+  padding-bottom: 2rem;
+}
+h4 {
+  padding-bottom: 1rem;
 }
