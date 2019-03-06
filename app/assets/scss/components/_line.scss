@@ -13,7 +13,7 @@
   @include lg {
     width: 100px;
   }
-  &--small {
+  &-small {
     height: 1px;
     background-color: $mainBeige;
     width: 10%;
@@ -25,7 +25,7 @@
     }
   }
 
-  &--small-red {
+  &-small-red {
     background-color: $mainRed;
     width: 10%;
     height: 1px;

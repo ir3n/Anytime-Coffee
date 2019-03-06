@@ -1,67 +1,49 @@
 header {
-  position: absolute;
-  height: 4.5rem;
+  // position: absolute;
+  height: 5rem;
   width: 100%;
   z-index: 3;
+  align-content: center;
+  @include grid;
+
+  .logo {
+    height: 3.5rem;
+    grid-column: 1 / 3;
+
+    @include lg {
+      height: 4.3rem;
+    }
+  }
 
   nav {
-    @include md {
-      top: 0;
-      width: 100%;
-      padding-top: 0.3rem;
-      padding-bottom: 0.2rem;
-      /* background-color: rgba(237, 196, 170, 0.5); */
+    float: right;
+    padding: 1.3rem 0;
+    text-transform: uppercase;
+    display: none;
+
+    @include lg {
+      padding: 1.5rem 0;
     }
 
-    .logo {
-      height: 55px;
-      margin-top: 0.3rem;
+    a {
+      color: $mainBrown;
+      margin-left: 1rem;
+      padding-bottom: 0.7rem;
+      border-bottom: 3px solid transparent;
 
-      @include md {
-        float: left;
+      @include transition;
+
+      &:hover {
+        border-bottom: 3px solid $mainRed;
       }
+
       @include lg {
-        height: 60px;
+        margin-left: 1.5rem;
       }
     }
 
-    ul {
-      display: none;
-
-      @include md {
-        list-style: none;
-        float: right;
-        margin-top: 0.5rem;
-        display: inline-block;
-      }
-
-      li {
-        display: inline-block;
-        margin-left: 2rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-
-        a:link,
-        a:visited {
-          color: $mainBrown;
-          border-bottom: 2px solid transparent;
-          transition: border-bottom 0.2s;
-          padding-bottom: 0.3rem;
-
-          @include lg {
-            font-size: 1.1rem;
-          }
-        }
-
-        a:hover,
-        a:active {
-          border-bottom: 2px solid $mainRed;
-
-          @include lg {
-            font-size: 1.1rem;
-          }
-        }
-      }
+    @include md {
+      display: block;
     }
   }
 }

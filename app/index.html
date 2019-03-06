@@ -15,31 +15,40 @@
       type="text/css"
     />
     <link
-      href="https://unpkg.com/ionicons@4.3.0/dist/css/ionicons.min.css"
       rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
     />
   </head>
 
   <body>
     <header>
-      <div class="row">
+      <div class="container">
+        <img
+          class="logo"
+          src="assets/images/anytime-coffee-logo.png"
+          alt="Anytime Coffee Logo"
+        />
         <nav>
-          <img
-            class="logo"
-            src="assets/images/anytime-coffee-logo.png"
-            alt="Anytime Coffee Logo"
-          />
-          <ul class="headline">
-            <li><a href="#">Our Delivery</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Our Deals</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+          <a href="#">Our Delivery</a>
+          <a href="#">How it works</a>
+          <a href="#">Our Deals</a>
+          <a href="#">Contact</a>
         </nav>
       </div>
     </header>
 
     <section id="hero">
+      <div class="hero-text-content">
+        <h1>
+          Your coffee <br />
+          <span class="bigger">Our priority</span>
+        </h1>
+        <button class="btn"><a href="#deals">Need coffee now!</a></button>
+        <button class="btn-ghost"><a href="#intro">Show me more</a></button>
+      </div>
+
       <picture>
         <source
           srcset="
@@ -64,135 +73,128 @@
         />
         <img srcset="assets/images/hero.jpg" alt="Woman enjoying her coffee" />
       </picture>
-
-      <div class="hero-text-content">
-        <h1 class="headline headline--medium">Your coffee</h1>
-        <h2 class="headline headline--section">Our priority</h2>
-        <a href="#" class="btn">Need coffee now!</a>
-        <a href="#" class="btn btn--ghost">Show me more</a>
-      </div>
     </section>
 
     <section id="intro">
-      <div class="row row--centered">
-        <h2 class="headline headline--section">who we are</h2>
+      <div class="row">
+        <h2>who we are</h2>
         <div class="line"></div>
+      </div>
+      <div class="wrapper">
+        <p>
+          We are your new premium coffee delivery service. <br />
+          Either it is when you wake up, at work or in any part of your day, let
+          us take care of your coffee <br />
+          and you have one less thing to worry about!
+        </p>
+      </div>
+
+      <div class="row">
         <div class="wrapper">
+          <i class="fas fa-infinity"></i>
+          <h3>up to 365 / year</h3>
           <p>
-            We are your new premium coffee delivery service. <br />
-            Either it is when you wake up, at work or in any part of your day,
-            let us take care of your coffee <br />
-            and you have one less thing to worry about!
+            With your subscription you are provided by up-to-365 days per year
+            coverage. You just choose the plan that suits your coffee needs.
+          </p>
+        </div>
+        <div class="wrapper">
+          <i class="far fa-star"></i>
+          <h3>best quality coffee</h3>
+          <p>
+            Our skilled baristas prepare the best beverages for you, using the
+            best quality materials.
+          </p>
+        </div>
+        <div class="wrapper">
+          <i class="far fa-clock"></i>
+          <h3>always on time</h3>
+          <p>
+            Your coffee always arrives on schedule. Our delivery services are
+            great so you can enjoy your coffee on time!
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="wrapper">
-          <div class="wrapper--col-3">
-            <i class="icon ion-ios-infinite"></i>
-            <h3 class="headline headline--smaller">up to 365 / year</h3>
-            <p>
-              With your subscription you are provided by up-to-365 days per year
-              coverage. You just choose the plan that suits your coffee needs.
-            </p>
-          </div>
-          <div class="wrapper--col-3">
-            <i class="icon ion-ios-star-outline"></i>
-            <h3 class="headline headline--smaller">best quality coffee</h3>
-            <p>
-              Our skilled baristas prepare the best beverages for you, using the
-              best quality materials.
-            </p>
-          </div>
-          <div class="wrapper--col-3">
-            <i class="icon ion-ios-timer"></i>
-            <h3 class="headline headline--smaller">always on time</h3>
-            <p>
-              Your coffee always arrives on schedule. Our delivery services are
-              great so you can enjoy your coffee on time!
-            </p>
-          </div>
-        </div>
-      </div>
-      <img class="intro--img" src="assets/images/coffee-beans.png" />
+
+      <img class="intro-img" src="assets/images/coffee-beans.png" />
     </section>
 
     <section id="deals">
-      <div class="row wrapper">
-        <div class="row--centered">
-          <h2 class="headline headline--section">our deals</h2>
-        </div>
-        <div class="line"></div>
-        <div class="wrapper--col-4 btn--full-body">
-          <a href="#">
-            <h4 class="headline headline--small">full - month deal</h4>
-            <ul>
-              <li>30 days / month</li>
-              <li>1.5&euro; / beverage</li>
-              <li>1 mini-croissant</li>
-              <li>free breakfast: 2 days</li>
-            </ul>
-            <div class="line line--small"></div>
-            <h4 class="headline headline--small headline--line">
-              50&euro; / month<br />
-              (save 15&euro;)
-            </h4>
-          </a>
-        </div>
-        <div class="wrapper--col-4 btn--full-body">
-          <a href="#">
-            <h4 class="headline headline--small">25 - days deal</h4>
-            <ul>
-              <li>25 days / month</li>
-              <li>1.5&euro; / beverage</li>
-              <li>1 mini-croissant</li>
-              <li>free breakfast: 1 day</li>
-            </ul>
-            <div class="line line--small"></div>
-            <h4 class="headline headline--small headline--line">
-              40&euro; / month<br />
-              (save 12&euro;)
-            </h4>
-          </a>
-        </div>
-        <div class="wrapper--col-4 btn--full-body">
-          <a href="#">
-            <h4 class="headline headline--small">half - month deal</h4>
-            <ul>
-              <li>15 days / month</li>
-              <li>1.5&euro; / beverage</li>
-              <li>1 mini-croissant</li>
-              <li class="no-icon">&nbsp;</li>
-            </ul>
-            <div class="line line--small"></div>
-            <h4 class="headline headline--small">
-              25&euro; / month<br />
-              (save 7&euro;)
-            </h4>
-          </a>
-        </div>
-        <div class="wrapper--col-4 btn--full-body">
-          <a href="#">
-            <h4 class="headline headline--small">one - time deal</h4>
-            <ul>
-              <li>1 beverage</li>
-              <li>2&euro; / beverage</li>
-              <li>2 mini- cookies</li>
-              <li class="no-icon">&nbsp;</li>
-            </ul>
-            <div class="line line--small"></div>
-            <h4 class="headline headline--small">
-              2&euro; <br />
-              &nbsp;
-            </h4>
-          </a>
-        </div>
-      </div>
       <div class="row">
-        <div class="wrapper--deals-box">
-          <h4 class="headline headline--small">new here?</h4>
-          <div class="line line--small-red"></div>
-          <a href="#" class="btn btn--deals">Sign up now</a>
+        <h2>our deals</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="card">
+        <a href="#">
+          <h4>full - month deal</h4>
+          <ul>
+            <li>30 days / month</li>
+            <li>1.5&euro; / beverage</li>
+            <li>1 mini-croissant</li>
+            <li>free breakfast: 2 days</li>
+          </ul>
+          <div class="line-small"></div>
+          <h4>
+            50&euro; / month <br />
+            (save 15&euro;)
+          </h4>
+        </a>
+      </div>
+      <div class="card">
+        <a href="#">
+          <h4>25 - days deal</h4>
+          <ul>
+            <li>25 days / month</li>
+            <li>1.5&euro; / beverage</li>
+            <li>1 mini-croissant</li>
+            <li>free breakfast: 1 day</li>
+          </ul>
+          <div class="line-small"></div>
+          <h4>
+            40&euro; / month<br />
+            (save 12&euro;)
+          </h4>
+        </a>
+      </div>
+      <div class="card">
+        <a href="#">
+          <h4>half - month deal</h4>
+          <ul>
+            <li>15 days / month</li>
+            <li>1.5&euro; / beverage</li>
+            <li>1 mini-croissant</li>
+            <li class="no-icon">&nbsp;</li>
+          </ul>
+          <div class="line-small"></div>
+          <h4>
+            25&euro; / month<br />
+            (save 7&euro;)
+          </h4>
+        </a>
+      </div>
+      <div class="card">
+        <a href="#">
+          <h4>one - time deal</h4>
+          <ul>
+            <li>1 beverage</li>
+            <li>2&euro; / beverage</li>
+            <li>2 mini- cookies</li>
+            <li class="no-icon">&nbsp;</li>
+          </ul>
+          <div class="line-small"></div>
+          <h4>
+            2&euro; <br />
+            &nbsp;
+          </h4>
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="wrapper">
+          <h4>new here?</h4>
+          <div class="line-small-red"></div>
+          <button><a href="#">Sign up now</a></button>
           <p>
             and get a one - week trial for the price of 1.5&euro; / beverage!
           </p>
@@ -201,85 +203,68 @@
     </section>
 
     <section id="snacks">
-      <div class="wrapper--col-2 wrapper--disp-later">
-        <ul>
-          <li>
-            <figure class="snacks-pic">
-              <img
-                src="assets/images/snacks-01.jpg"
-                alt="Variety of cookies and muffins"
-              />
-            </figure>
-          </li>
-          <li>
-            <figure class="snacks-pic">
-              <img src="assets/images/snacks-02.jpg" alt="Croissants" />
-            </figure>
-          </li>
-          <li>
-            <figure class="snacks-pic">
-              <img src="assets/images/snacks-03.jpg" alt="Sandwiches" />
-            </figure>
-          </li>
-        </ul>
+      <!-- AYTO NA GINEI ME GRID -->
+      <div class="wrapper">
+        <img
+          src="assets/images/snacks-01.jpg"
+          alt="Variety of cookies and muffins"
+        />
+        <img src="assets/images/snacks-02.jpg" alt="Croissants" />
+        <img src="assets/images/snacks-03.jpg" alt="Sandwiches" />
       </div>
-      <div class="wrapper--col-2">
-        <div class="wrapper">
-          <h2 class="headline headline--medium">Our snacks</h2>
-          <div class="line"></div>
-        </div>
-        <div class="wrapper--bigger-p">
-          <p>
-            Besides the best coffee in town, we are also known for our variety
-            of delicious snacks.
-          </p>
-          <p>
-            You can combine your coffee with your favorite sweet or salty treat.
-          </p>
-          <p>
-            You may choose among sandwiches, croissants, cookies and many more.
-          </p>
-          <p>Always fresh!</p>
-        </div>
+
+      <div class="wrapper">
+        <h2>Our snacks</h2>
+        <div class="line"></div>
+        <p>
+          Besides the best coffee in town, we are also known for our variety of
+          delicious snacks.
+        </p>
+        <p>
+          You can combine your coffee with your favorite sweet or salty treat.
+        </p>
+        <p>
+          You may choose among sandwiches, croissants, cookies and many more.
+        </p>
+        <p>Always fresh!</p>
       </div>
     </section>
 
     <section id="how">
-      <div class="wrapper--col-2 wrapper--col-2-fullheight">
-        <div class="wrapper">
-          <h2 class="headline headline--medium">How it works</h2>
-          <div class="line"></div>
-        </div>
-        <div class="wrapper--bigger-p">
-          <div class="num">1.</div>
-          <p>
-            Choose the subscription plan that best fits your needs and sign up
-            today.
-          </p>
-          <div class="num">2.</div>
-          <p>
-            Order your coffee using your mobile app, website or give us a call!
-          </p>
-          <div class="num">3.</div>
-          <p>Enjoy your coffee... Anytime!</p>
+      <div class="wrapper">
+        <h2>How it works</h2>
+        <div class="line"></div>
+        <div class="num">1.</div>
+        <p>
+          Choose the subscription plan that best fits your needs and sign up
+          today.
+        </p>
+        <div class="num">2.</div>
+        <p>
+          Order your coffee using your mobile app, website or give us a call!
+        </p>
+        <div class="num">3.</div>
+        <p>Enjoy your coffee... Anytime!</p>
+        <button>
           <a href="#"
             ><img
               src="assets/images/apple-app-store-icon.png"
               alt="Apple app-store icon"
           /></a>
+        </button>
+        <button>
           <a href="#"
             ><img
               src="assets/images/download-app-android.png"
               alt="Android Google Play"
           /></a>
-        </div>
+        </button>
       </div>
-      <div class="wrapper--col-2 how-bg wrapper--col-2-fullheight"></div>
     </section>
 
     <section id="testimonials">
-      <div class="row row--centered">
-        <h2 class="headline headline--section">Our customers love us!</h2>
+      <div class="row">
+        <h2>Our customers love us!</h2>
         <div class="line"></div>
         <div class="wrapper">
           <p>
@@ -289,45 +274,32 @@
         </div>
       </div>
       <div class="row">
-        <div class="wrapper wrapper--flex">
-          <div class="wrapper--col-3 wrapper--flex">
-            <div class="wrapper--bg-box">
-              <img src="assets/images/John%20Smith.jpg" alt="John Smith" />
-              <h5>John Smith</h5>
-              "The service is impeccable! Always on time and with great coffee
-              and snacks. The deals are also great."
-            </div>
-          </div>
-          <div class="wrapper--col-3 wrapper--flex">
-            <div class="wrapper--bg-box">
-              <img
-                src="assets/images/Helena%20Stergiou.jpg"
-                alt="Helena Stergiou"
-              />
-              <h5>Helena Stergiou</h5>
-              "I chose the full- month deal and I am more than satisfied. My
-              coffee comes at work every day at the same time and the breakfast
-              is perfect!"
-            </div>
-          </div>
-          <div class="wrapper--col-3 wrapper--flex">
-            <div class="wrapper--bg-box">
-              <img src="assets/images/Billy%20Pan.jpg" alt="Billy Pan" />
-              <h5>Billy Pan</h5>
-              "Perfect coffee and the most delicious snacks, always fresh,
-              indeed! Great service and good deals, too."
-            </div>
-          </div>
+        <div class="card">
+          <i class="far fa-comment"></i>
+          "The service is impeccable! Always on time and with great coffee and
+          snacks. The deals are also great."
+        </div>
+        <div class="card">
+          <i class="far fa-comment"></i>
+          "I chose the full- month deal and I am more than satisfied. My coffee
+          comes at work every day at the same time and the breakfast is
+          perfect!"
+        </div>
+        <div class="card">
+          <i class="far fa-comment"></i>
+          "Perfect coffee and the most delicious snacks, always fresh, indeed!
+          Great service and good deals, too."
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <div class="wrapper--col-2 contact-bg">
-        <h3 class="headline headline--smaller">Contact us ... anytime!</h3>
-        <div class="line line--small-red"></div>
+      <div class="wrapper">
+        <h3>Contact us ... anytime!</h3>
+        <div class="line-small-red"></div>
 
         <form>
+          <!-- STYLE THE FORM -->
           <div class="wrapper--col-3">
             <label for="name">Name</label>
           </div>
@@ -376,29 +348,28 @@
         </form>
       </div>
 
-      <div class="wrapper--col-2">
-        <h3 class="headline headline--smaller">We are here</h3>
+      <div class="wrapper">
+        <h3>We are here</h3>
         <div class="line line--small-red"></div>
-        <div id="controls"></div>
-        <div id="gmap" style="width:300px;height:250px;"></div>
+        <!-- INSERT MAP HERE -->
       </div>
     </section>
 
     <footer>
       <div class="row">
-        <div class="wrapper--col-2 lineheight">
+        <div class="footer-text">
           +302410214216 <br />
           Thoukididou 1, Larissa <br />
           41222
         </div>
-        <div class="wrapper--col-2">
-          <a href="#"><i class="icon ion-logo-facebook"></i></a>
-          <a href="#"><i class="icon ion-logo-instagram"></i></a>
-          <a href="#"><i class="icon ion-logo-twitter"></i></a>
-          <a href="#"><i class="icon ion-logo-googleplus"></i></a>
+        <div class="footer-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g"></i></a>
         </div>
       </div>
-      <div class="row row--centered smaller">
+      <div class="footer-copyrights">
         Copyright &copy; 2018 by Anytime Coffee. <br />
         All rights reserved.
       </div>

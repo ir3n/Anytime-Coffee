@@ -1,13 +1,8 @@
 section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   position: relative;
+  @include grid;
 
   @include md {
     height: 100vh;
-  }
-  @include lg {
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
   }
 }

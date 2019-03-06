@@ -1,6 +1,4 @@
 section#contact {
-  padding: 0;
-
   .contact-bg {
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.7),
@@ -9,49 +7,5 @@ section#contact {
       url(/assets/images/contact.jpg);
     background-size: cover;
     background-position: center;
-
-    @include md {
-      height: 100vh;
-    }
-  }
-
-  .wrapper--col-2 {
-    padding: 1rem 0;
-  }
-
-  .wrapper--col-3 {
-    padding: 1rem 1rem 1rem 3rem;
-    text-align: left;
-  }
-
-  h3 {
-    text-align: center;
-  }
-
-  .line {
-    margin-bottom: 5rem;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  select,
-  textarea {
-    width: 100%;
-    padding: 0.6rem;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-    background-color: rgba(255, 255, 255, 0.63);
-  }
-  textarea {
-    height: 100px;
-  }
-  input[type="checkbox"] {
-    margin: 10px 5px 10px 0;
-  }
-  input[type="submit"] {
-    margin-top: -5rem;
-  }
-  *:focus {
-    outline: none;
   }
 }

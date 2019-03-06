@@ -1,3 +1,4 @@
+//BREAKPOINTS
 @mixin sm {
   @media (min-width: #{$screen-sm-min}) {
     @content;
@@ -14,4 +15,27 @@
   @media (min-width: #{$screen-lg-min}) {
     @content;
   }
+}
+//-----------------------------------------|
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+@mixin light-font {
+  font-weight: 300;
+}
+
+@mixin center {
+  text-align: center;
+}
+
+@mixin bg-image {
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin transition {
+  transition: all 0.3s;
 }
