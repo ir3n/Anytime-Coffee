@@ -6,6 +6,21 @@ header {
   align-content: center;
   @include grid;
 
+  i#menu-button {
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+    @include right;
+    @include transition;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.3);
+    }
+
+    @include md {
+      display: none;
+    }
+  }
   .logo {
     height: 3.5rem;
     grid-column: 1 / 3;

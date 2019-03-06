@@ -31,6 +31,10 @@
   text-align: center;
 }
 
+@mixin right {
+  float: right;
+}
+
 @mixin bg-image {
   background-size: cover;
   background-position: center;
