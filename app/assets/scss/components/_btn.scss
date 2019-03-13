@@ -34,14 +34,10 @@ button {
 
 .app-btn {
   background-color: transparent;
-  grid-column: span 3;
-  margin: 0;
+  margin: 0 0 0.5rem 0;
+  padding: 0;
   border: none;
   @include transition;
-
-  &:first-child {
-    grid-column: 4 / span 3;
-  }
 
   &:hover {
     background-color: transparent;
@@ -50,7 +46,7 @@ button {
   }
 
   img {
-    width: 90%;
+    width: 9rem;
     height: auto;
   }
 }

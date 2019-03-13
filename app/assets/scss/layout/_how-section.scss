@@ -1,12 +1,22 @@
 section#how {
-  @include section-divided;
-  grid-template-rows: auto;
+  @include center;
+
+  @include md {
+    @include section-divided;
+    text-align: left;
+    grid-template-rows: auto;
+  }
 
   .num {
     color: $mainRed;
     font-size: 2rem;
     padding: 1rem;
-    grid-column: span 1;
+    display: block;
+    @include center;
+
+    @include md {
+      grid-column: span 1;
+    }
   }
   .how-bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),

@@ -51,11 +51,15 @@
   }
 
   &-grid-1-5 {
-    padding: 5rem;
     line-height: 1.7;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-gap: 1rem;
+    padding: 1rem 3rem;
+
+    @include md {
+      display: grid;
+      grid-template-columns: 1fr 5fr;
+      grid-gap: 1rem;
+      padding: 3rem 5rem;
+    }
 
     p {
       align-self: center;
