@@ -3,24 +3,35 @@ footer {
     url(/assets/images/footer.jpg);
   @include bg-image;
   color: $lightGray;
-  height: 15rem;
-  padding: 2rem 3rem;
+  height: auto;
+  padding: 1rem;
+
+  @include md {
+    padding: 2rem 3rem;
+    height: 15rem;
+  }
 
   .container {
     display: grid;
     grid-template-rows: 3rem 5rem 5rem;
   }
   .footer-icons {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: center;
+    @include md {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: center;
+    }
   }
   .footer-text {
     margin-top: 1rem;
   }
   .copyright {
     font-size: 0.9rem;
-    align-self: center;
+    align-self: end;
+
+    @include md {
+      align-self: center;
+    }
   }
 
   .row-grid-no-p {
