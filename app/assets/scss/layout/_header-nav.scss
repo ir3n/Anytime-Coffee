@@ -3,10 +3,10 @@ header {
   width: 100%;
   z-index: 3;
   align-content: center;
-  position: fixed;
   top: 0;
   background-color: hsla(34, 51%, 74%, 0.849);
   @include grid;
+  @include absolute;
 
   i#menu-button {
     font-size: 1.4rem;

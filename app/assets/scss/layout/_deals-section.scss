@@ -6,8 +6,15 @@ section#deals {
 
   @include bg-image;
 
+  @include md {
+    height: auto;
+  }
   .row:last-of-type {
-    padding-top: 1rem;
+    padding: 0 1rem 2rem 1rem;
+
+    @include md {
+      padding-top: 1rem;
+    }
   }
 
   a {
