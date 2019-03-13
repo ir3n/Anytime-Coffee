@@ -1,11 +1,17 @@
 .container {
   grid-column: 2 / 12;
   height: auto;
-}
 
-.container-smaller {
-  grid-column: 3 / 11;
-  @include center;
+  &-smaller {
+    grid-column: 3 / 11;
+    @include center;
+  }
+}
+.grid-half {
+  grid-column: span 1;
+}
+.row-grid-no-p {
+  grid-column: span 12;
 }
 
 .row {
@@ -19,27 +25,27 @@
   @include center;
 }
 
-form {
-  input[type="text"],
-  input[type="email"],
-  select,
-  textarea {
-    width: 100%;
-    padding: 0.6rem;
-    border-radius: 3px;
-    border: 1px solid $mediumGray;
-    background-color: $lightGray;
+.row-smaller-p {
+  padding-top: 2rem;
+}
+
+.wrapper {
+  padding: 5rem;
+  line-height: 3;
+  @include center;
+
+  &-grid-1-5 {
+    padding: 5rem;
+    line-height: 1.7;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 1rem;
+
+    p {
+      align-self: center;
+    }
   }
-  textarea {
-    height: 100px;
-  }
-  input[type="checkbox"] {
-    margin: 10px 5px 10px 0;
-  }
-  input[type="submit"] {
-    margin-top: -5rem;
-  }
-  *:focus {
-    outline: none;
-  }
+}
+.left {
+  text-align: left;
 }

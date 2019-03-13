@@ -183,8 +183,7 @@
     </section>
 
     <section id="snacks">
-      <!-- AYTO NA GINEI ME GRID -->
-      <div class="wrapper">
+      <div class="image-grid">
         <img
           src="assets/images/snacks-01.jpg"
           alt="Variety of cookies and muffins"
@@ -193,165 +192,179 @@
         <img src="assets/images/snacks-03.jpg" alt="Sandwiches" />
       </div>
 
-      <div class="wrapper">
-        <h2>Our snacks</h2>
-        <div class="line"></div>
-        <p>
-          Besides the best coffee in town, we are also known for our variety of
-          delicious snacks.
-        </p>
-        <p>
-          You can combine your coffee with your favorite sweet or salty treat.
-        </p>
-        <p>
-          You may choose among sandwiches, croissants, cookies and many more.
-        </p>
-        <p>Always fresh!</p>
+      <div>
+        <div class="row">
+          <h2>Our snacks</h2>
+          <div class="line"></div>
+        </div>
+        <div class="wrapper">
+          <p>
+            Besides the best coffee in town, we are also known for our variety
+            of delicious snacks.
+          </p>
+          <p>
+            You can combine your coffee with your favorite sweet or salty treat.
+          </p>
+          <p>
+            You may choose among sandwiches, croissants, cookies and many more.
+          </p>
+          <p>Always fresh!</p>
+        </div>
       </div>
     </section>
 
     <section id="how">
-      <div class="wrapper">
-        <h2>How it works</h2>
-        <div class="line"></div>
-        <div class="num">1.</div>
-        <p>
-          Choose the subscription plan that best fits your needs and sign up
-          today.
-        </p>
-        <div class="num">2.</div>
-        <p>
-          Order your coffee using your mobile app, website or give us a call!
-        </p>
-        <div class="num">3.</div>
-        <p>Enjoy your coffee... Anytime!</p>
-        <button>
-          <a href="#"
-            ><img
-              src="assets/images/apple-app-store-icon.png"
-              alt="Apple app-store icon"
-          /></a>
-        </button>
-        <button>
-          <a href="#"
-            ><img
-              src="assets/images/download-app-android.png"
-              alt="Android Google Play"
-          /></a>
-        </button>
+      <div>
+        <div class="row">
+          <h2>How it works</h2>
+          <div class="line"></div>
+        </div>
+        <div class="wrapper-grid-1-5">
+          <span class="num">1.</span>
+          <p>
+            Choose the subscription plan that best fits your needs and sign up
+            today.
+          </p>
+          <span class="num">2.</span>
+          <p>
+            Order your coffee using your mobile app, website or give us a call!
+          </p>
+          <span class="num">3.</span>
+          <p>Enjoy your coffee... Anytime!</p>
+        </div>
+        <div class="row-grid">
+          <button class="app-btn">
+            <a href="#"
+              ><img
+                src="assets/images/apple-app-store-icon.png"
+                alt="Apple app-store icon"
+            /></a>
+          </button>
+          <button class="app-btn">
+            <a href="#"
+              ><img
+                src="assets/images/download-app-android.png"
+                alt="Android Google Play"
+            /></a>
+          </button>
+        </div>
       </div>
+      <div class="how-bg"></div>
     </section>
 
     <section id="testimonials">
       <div class="row">
         <h2>Our customers love us!</h2>
         <div class="line"></div>
-        <div class="wrapper">
-          <p>
-            Our top priority is our customers' satisfaction and their kind words
-            are always rewarding.
-          </p>
-        </div>
       </div>
-      <div class="row">
-        <div class="card">
-          <i class="far fa-comment"></i>
-          "The service is impeccable! Always on time and with great coffee and
-          snacks. The deals are also great."
-        </div>
-        <div class="card">
-          <i class="far fa-comment"></i>
-          "I chose the full- month deal and I am more than satisfied. My coffee
-          comes at work every day at the same time and the breakfast is
-          perfect!"
-        </div>
-        <div class="card">
-          <i class="far fa-comment"></i>
-          "Perfect coffee and the most delicious snacks, always fresh, indeed!
-          Great service and good deals, too."
+      <div class="container-smaller">
+        <p>
+          Our top priority is our customers' satisfaction and their kind words
+          are always rewarding.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row-grid">
+          <div class="card1-of-3">
+            <i class="far fa-comment"></i>
+            <p>
+              "The service is impeccable! Always on time and with great coffee
+              and snacks. The deals are also great."
+            </p>
+          </div>
+          <div class="card1-of-3">
+            <i class="far fa-comment"></i>
+            <p>
+              "I chose the full- month deal and I am more than satisfied. My
+              coffee comes at work every day at the same time and the breakfast
+              is perfect!"
+            </p>
+          </div>
+          <div class="card1-of-3">
+            <i class="far fa-comment"></i>
+            <p>
+              "Perfect coffee and the most delicious snacks, always fresh,
+              indeed! Great service and good deals, too."
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <div class="wrapper">
-        <h3>Contact us ... anytime!</h3>
-        <div class="line-small-red"></div>
-
-        <form>
-          <!-- STYLE THE FORM -->
-          <div class="wrapper--col-3">
-            <label for="name">Name</label>
-          </div>
-          <div class="wrapper--col-2">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Your name"
-              required
-            />
-          </div>
-          <div class="wrapper--col-3">
-            <label for="name">Email</label>
-          </div>
-          <div class="wrapper--col-2">
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="Your email"
-              required
-            />
-          </div>
-          <div class="wrapper--col-3">
-            <label>Newsletter?</label>
-          </div>
-          <div class="wrapper--col-2">
-            <input type="checkbox" name="news" id="news" checked />Yes, please.
-          </div>
-          <div class="wrapper--col-3">
-            <label>Tell us what you think!</label>
-          </div>
-          <div class="wrapper--col-2">
+      <div class="row-grid contact-bg">
+        <div class="row">
+          <h2>Contact us ... anytime!</h2>
+          <div class="line"></div>
+        </div>
+        <div class="container">
+          <form class="row-grid">
+            <div class="row-grid-no-p">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="row-grid-no-p">
+              <label for="name">Email</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Your email"
+                required
+              />
+            </div>
+            <div class="row-grid-no-p">
+              <label>Newsletter?</label>
+              <input type="checkbox" name="news" id="news" checked />Yes,
+              please.
+            </div>
+            <label class="row-grid-no-p">Tell us what you think!</label>
             <textarea
+              class="row-grid-no-p"
               name="message"
               placeholder="Your message here..."
             ></textarea>
-          </div>
-          <div class="wrapper--col-3">
-            <label>&nbsp;</label>
-          </div>
-          <div class="wrapper--col-2 centered">
-            <input type="submit" value="Send" class="btn" />
-          </div>
-        </form>
+
+            <div class="row-grid-no-p">
+              <button type="submit" value="Send">Send</button>
+            </div>
+          </form>
+        </div>
       </div>
 
-      <div class="wrapper">
-        <h3>We are here</h3>
-        <div class="line line--small-red"></div>
-        <!-- INSERT MAP HERE -->
+      <div>
+        <div class="row">
+          <h2>We are here</h2>
+          <div class="line"></div>
+          <!-- INSERT MAP HERE -->
+        </div>
       </div>
     </section>
 
     <footer>
-      <div class="row">
-        <div class="footer-text">
-          +302410214216 <br />
-          Thoukididou 1, Larissa <br />
-          41222
-        </div>
-        <div class="footer-icons">
+      <div class="container">
+        <div class="footer-icons row-grid-no-p">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-google-plus-g"></i></a>
         </div>
-      </div>
-      <div class="footer-copyrights">
-        Copyright &copy; 2018 by Anytime Coffee. <br />
-        All rights reserved.
+        <div class="footer-text row-grid-no-p">
+          +302410214216 <br />
+          Thoukididou 1, Larissa <br />
+          41222
+        </div>
+        <div class="copyright row-grid-no-p">
+          Copyright &copy; 2018 by Anytime Coffee. <br />
+          All rights reserved.
+        </div>
       </div>
     </footer>
   </body>

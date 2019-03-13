@@ -11,6 +11,7 @@ button {
     background-color: $darkRed;
   }
 
+  &[type="submit"],
   a {
     color: $mainBeige;
     padding: 0.6rem 1rem;
@@ -28,5 +29,28 @@ button {
     &:hover {
       color: $mainBeige;
     }
+  }
+}
+
+.app-btn {
+  background-color: transparent;
+  grid-column: span 3;
+  margin: 0;
+  border: none;
+  @include transition;
+
+  &:first-child {
+    grid-column: 4 / span 3;
+  }
+
+  &:hover {
+    background-color: transparent;
+    border: none;
+    @include scale;
+  }
+
+  img {
+    width: 90%;
+    height: auto;
   }
 }

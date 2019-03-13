@@ -1,7 +1,16 @@
 section#testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(/assets/images/coffee-beans-bg.jpg);
-  background-size: cover;
-  background-position: center;
+  grid-template-rows: 10rem 9rem auto;
   color: $mainBeige;
+
+  @include bg-image;
+
+  .container,
+  .container-smaller {
+    padding-top: 3rem;
+  }
+  .card1-of-3 {
+    font-style: italic;
+  }
 }

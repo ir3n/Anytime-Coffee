@@ -6,5 +6,6 @@ section {
   @include md {
     height: 100vh;
     @include grid;
+    @include no-overflow;
   }
 }

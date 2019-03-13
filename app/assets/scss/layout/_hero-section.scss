@@ -1,24 +1,17 @@
 section#hero {
-  background-image: url("../../images/hero-large.jpg");
+  background-image: linear-gradient(
+      rgba(245, 194, 146, 0.4),
+      rgba(245, 194, 146, 0.4)
+    ),
+    url(/assets/images/hero-large.jpg);
   @include bg-image;
-
-  @include md {
-    align-content: end;
-  }
+  align-content: center;
 
   .hero-container {
-    @extend .container;
-    grid-column: 2 / 8;
+    grid-column: 2 / 10;
   }
 
   .hero-text {
-    padding-top: 10rem;
-    padding-bottom: 3rem;
-    background-color: pink;
-
-    @include center;
-    @include md {
-      padding-bottom: 8rem;
-    }
+    padding: 2rem;
   }
 }

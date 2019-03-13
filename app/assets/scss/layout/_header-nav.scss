@@ -3,8 +3,10 @@ header {
   width: 100%;
   z-index: 3;
   align-content: center;
+  position: fixed;
+  top: 0;
+  background-color: hsla(34, 51%, 74%, 0.849);
   @include grid;
-  @include absolute;
 
   i#menu-button {
     font-size: 1.4rem;
@@ -45,12 +47,12 @@ header {
       color: $mainBrown;
       margin-left: 1rem;
       padding-bottom: 0.7rem;
-      border-bottom: 3px solid transparent;
+      border-bottom: 2px solid transparent;
 
       @include transition;
 
       &:hover {
-        border-bottom: 3px solid $mainRed;
+        border-bottom: 2px solid $mainRed;
       }
 
       @include lg {

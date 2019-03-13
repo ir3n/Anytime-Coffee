@@ -1,11 +1,18 @@
 section#contact {
+  // .contact-bg {
+  //   background-image: linear-gradient(
+  //       rgba(255, 255, 255, 0.7),
+  //       rgba(255, 255, 255, 0.7)
+  //     ),
+  //     url(/assets/images/contact.jpg);
+  //   background-size: cover;
+  //   background-position: center;
+  // }
+  @include section-divided;
+  grid-template-rows: auto;
+
   .contact-bg {
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.7),
-        rgba(255, 255, 255, 0.7)
-      ),
-      url(/assets/images/contact.jpg);
-    background-size: cover;
-    background-position: center;
+    background-image: url(/assets/images/contact.jpg);
+    @include bg-image;
   }
 }

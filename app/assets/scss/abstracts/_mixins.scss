@@ -22,6 +22,9 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
+@mixin section-divided {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 @mixin light-font {
   font-weight: 300;
@@ -49,10 +52,16 @@
 @mixin scale {
   transform: scale(1.2);
 }
+@mixin no-overflow {
+  overflow: hidden;
+}
 
 @mixin beige-bg {
   background-color: hsla(34, 51%, 74%, 0.705);
 }
 @mixin dark-bg {
   background-color: rgba(0, 0, 0, 0.788);
+}
+@mixin white-bg {
+  background-color: rgba(255, 255, 255, 0.836);
 }
