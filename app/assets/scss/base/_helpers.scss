@@ -39,9 +39,16 @@
 }
 
 .wrapper {
-  padding: 5rem;
-  line-height: 3;
   @include center;
+  padding: 3rem;
+  line-height: 2;
+  max-width: 40rem;
+  margin: 0 auto;
+
+  @include sm {
+    padding: 3rem 5rem;
+    line-height: 3;
+  }
 
   &-grid-1-5 {
     padding: 5rem;

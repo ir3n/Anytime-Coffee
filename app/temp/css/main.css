@@ -56,9 +56,15 @@ h4 {
   padding-top: 2rem; }
 
 .wrapper {
-  padding: 5rem;
-  line-height: 3;
-  text-align: center; }
+  text-align: center;
+  padding: 3rem;
+  line-height: 2;
+  max-width: 40rem;
+  margin: 0 auto; }
+  @media (min-width: 480px) {
+    .wrapper {
+      padding: 3rem 5rem;
+      line-height: 3; } }
   .wrapper-grid-1-5 {
     padding: 5rem;
     line-height: 1.7;
@@ -228,12 +234,22 @@ section {
       grid-template-columns: repeat(12, 1fr); } }
 
 section#snacks {
+  background-image: linear-gradient(rgba(238, 211, 176, 0.7), rgba(238, 211, 176, 0.7)), url(/assets/images/snacks-01.jpg);
+  background-size: cover;
+  background-position: center;
   grid-template-columns: repeat(2, 1fr);
   background-color: #dfc19b; }
+  @media (min-width: 810px) {
+    section#snacks {
+      background-color: #dfc19b;
+      background-image: none; } }
   section#snacks .image-grid {
-    display: grid;
-    grid-template-rows: repeat(3, 33.3%);
+    display: none;
     overflow: hidden; }
+    @media (min-width: 810px) {
+      section#snacks .image-grid {
+        display: grid;
+        grid-template-rows: repeat(3, 33.3%); } }
     section#snacks .image-grid img {
       max-width: 100%;
       -webkit-transform: scale(1.2);

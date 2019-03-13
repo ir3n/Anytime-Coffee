@@ -1,24 +1,26 @@
 section#snacks {
-  // background-image: linear-gradient(
-  //     rgba(222, 193, 154, 0.8),
-  //     rgba(222, 193, 154, 0.8)
-  //   ),
-  //   url(/assets/images/snacks-01.jpg);
-  // background-size: cover;
-  // background-position: center;
+  background-image: linear-gradient(
+      rgba(238, 211, 176, 0.7),
+      rgba(238, 211, 176, 0.7)
+    ),
+    url(/assets/images/snacks-01.jpg);
+  @include bg-image;
 
-  // @include md {
-  //   background-color: $mainBeige;
-  //   background-image: none;
-  // }
+  @include md {
+    background-color: $mainBeige;
+    background-image: none;
+  }
   @include section-divided;
   background-color: $mainBeige;
 
   .image-grid {
-    display: grid;
-    grid-template-rows: repeat(3, 33.3%);
-
+    display: none;
     @include no-overflow;
+
+    @include md {
+      display: grid;
+      grid-template-rows: repeat(3, 33.3%);
+    }
 
     img {
       max-width: 100%;
