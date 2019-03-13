@@ -1,7 +1,9 @@
 section#intro {
-  grid-template-rows: 10rem 9rem auto;
   background-color: $lightGray;
 
+  @include md {
+    grid-template-rows: 10rem 9rem auto;
+  }
   h3 {
     white-space: nowrap;
   }

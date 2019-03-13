@@ -25,6 +25,9 @@
 @mixin section-divided {
   grid-template-columns: repeat(2, 1fr);
 }
+@mixin grid-full {
+  grid-column: span 12;
+}
 
 @mixin light-font {
   font-weight: 300;

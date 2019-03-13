@@ -1,7 +1,14 @@
 i {
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
   color: $mainRed;
+
+  @include sm {
+    font-size: 3.5rem;
+  }
+  @include md {
+    margin-bottom: 2rem;
+  }
 }
 
 footer i {

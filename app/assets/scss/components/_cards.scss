@@ -1,9 +1,17 @@
 .card1-of-3 {
-  grid-column: span 4;
-  padding: 5%;
+  padding: 5% 5% 10% 5%;
   line-height: 1.5;
+  @include grid-full;
+
+  @include md {
+    grid-column: span 4;
+  }
 }
 .card1-of-4 {
-  grid-column: span 3;
+  @include grid-full;
   padding: 11%;
+
+  @include md {
+    grid-column: span 3;
+  }
 }

@@ -13,17 +13,28 @@ ul {
 
 h3,
 h5 {
-  padding-bottom: 2rem; }
+  padding-bottom: 1rem; }
+  @media (min-width: 810px) {
+    h3,
+    h5 {
+      padding-bottom: 2rem; } }
 
 h4 {
   padding-bottom: 1rem; }
 
 .container {
-  grid-column: 2 / 12;
+  padding: 1rem;
   height: auto; }
+  @media (min-width: 810px) {
+    .container {
+      grid-column: 2 / 12;
+      padding: 0; } }
   .container-smaller {
-    grid-column: 3 / 11;
+    padding: 2rem;
     text-align: center; }
+    @media (min-width: 810px) {
+      .container-smaller {
+        grid-column: 3 / 11; } }
 
 .grid-half {
   grid-column: span 1; }
@@ -180,8 +191,10 @@ header {
         display: block; } }
 
 section#intro {
-  grid-template-rows: 10rem 9rem auto;
   background-color: #c9c9c9; }
+  @media (min-width: 810px) {
+    section#intro {
+      grid-template-rows: 10rem 9rem auto; } }
   section#intro h3 {
     white-space: nowrap; }
 
@@ -198,13 +211,15 @@ section#hero {
 section {
   position: relative;
   width: 100%;
-  height: auto; }
+  height: auto;
+  padding-bottom: 1rem;
+  overflow: hidden; }
   @media (min-width: 810px) {
     section {
       height: 100vh;
+      padding-bottom: 0;
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      overflow: hidden; } }
+      grid-template-columns: repeat(12, 1fr); } }
 
 section#snacks {
   grid-template-columns: repeat(2, 1fr);
@@ -350,9 +365,15 @@ button {
     height: auto; }
 
 i {
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
   color: #f44034; }
+  @media (min-width: 480px) {
+    i {
+      font-size: 3.5rem; } }
+  @media (min-width: 810px) {
+    i {
+      margin-bottom: 2rem; } }
 
 footer i {
   color: #c9c9c9;
@@ -365,11 +386,7 @@ footer i {
   background-color: #f44034;
   content: " ";
   width: 60px;
-  margin: 0 auto;
-  margin-top: 30px; }
-  @media (min-width: 480px) {
-    .line {
-      margin-top: 15px; } }
+  margin: 1rem auto; }
   @media (min-width: 1024px) {
     .line {
       width: 100px; } }
@@ -383,15 +400,21 @@ footer i {
         width: 25%; } }
   .line-small-red {
     background-color: #f44034;
-    width: 5%;
+    width: 30px;
     height: 1px;
     margin: 0 auto; }
 
 .card1-of-3 {
-  grid-column: span 4;
-  padding: 5%;
-  line-height: 1.5; }
+  padding: 5% 5% 10% 5%;
+  line-height: 1.5;
+  grid-column: span 12; }
+  @media (min-width: 810px) {
+    .card1-of-3 {
+      grid-column: span 4; } }
 
 .card1-of-4 {
-  grid-column: span 3;
+  grid-column: span 12;
   padding: 11%; }
+  @media (min-width: 810px) {
+    .card1-of-4 {
+      grid-column: span 3; } }
