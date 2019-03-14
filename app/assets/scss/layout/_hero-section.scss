@@ -5,7 +5,7 @@ section#hero {
     ),
     url(/assets/images/hero-small.jpg);
   @include bg-image;
-  align-content: center;
+  align-content: end;
   height: 32rem;
 
   @include md {
@@ -22,6 +22,8 @@ section#hero {
     bottom: 2rem;
     @include md {
       grid-column: 2 / 10;
+      position: relative;
+      padding-bottom: 8rem;
     }
   }
 
