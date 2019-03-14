@@ -1,19 +1,30 @@
 form {
-  padding: 3rem 5rem;
-  margin-top: 1rem;
   border-radius: 10px;
   line-height: 2.5;
   text-align: left;
-  @include white-bg;
+  max-width: 30rem;
+  margin: 1rem auto;
 
+  @include sm {
+    padding: 3rem 5rem;
+    @include white-bg;
+
+    @include md {
+      padding: 2rem 3rem;
+    }
+  }
   input[type="text"] {
-    width: 63%;
+    width: 70%;
     height: 2rem;
     padding: 0.5rem;
     border-radius: 8px;
     border: 1px solid $lightGray;
     float: right;
     margin-top: 0.6rem;
+
+    @include sm {
+      width: 63%;
+    }
   }
   input[type="checkbox"] {
     align-self: center;
