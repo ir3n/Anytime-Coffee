@@ -22,16 +22,20 @@ h5 {
 }
 
 h1 {
-  font-size: 1.7rem;
-  line-height: 1.3;
-
+  font-size: 1.3rem;
+  @include md {
+    font-size: 1.7rem;
+    line-height: 1.3;
+  }
   @include lg {
     font-size: 2.2rem;
   }
 }
 .bigger {
-  font-size: 3.5rem;
-
+  font-size: 2.3rem;
+  @include md {
+    font-size: 3.5rem;
+  }
   @include lg {
     font-size: 4rem;
   }

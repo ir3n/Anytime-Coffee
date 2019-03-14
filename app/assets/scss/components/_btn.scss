@@ -1,34 +1,47 @@
-button {
-  font-size: 1.3rem;
+.btn {
   padding: 0.6rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: $mainBeige;
   border: 1px solid $mainRed;
   background-color: $mainRed;
+
   @include transition;
+
+  @include sm {
+    font-size: 1rem;
+  }
+  @include md {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+  @include lg {
+    font-size: 1.3rem;
+  }
 
   &:hover {
     border: 1px solid $darkRed;
     background-color: $darkRed;
   }
 
-  &[type="submit"],
-  a {
+  &[type="submit"] {
     color: $mainBeige;
     padding: 0.6rem 1rem;
   }
 }
 
 .btn-ghost {
+  @extend .btn;
   background-color: transparent;
-  margin-left: 1rem;
+  color: $mainRed;
+  @include transition;
 
-  a {
-    color: $mainRed;
-    @include transition;
+  @include sm {
+    margin-left: 1rem;
+  }
 
-    &:hover {
-      color: $mainBeige;
-    }
+  &:hover {
+    color: $mainBeige;
   }
 }
 

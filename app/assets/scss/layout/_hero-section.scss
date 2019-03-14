@@ -3,15 +3,33 @@ section#hero {
       rgba(245, 194, 146, 0.4),
       rgba(245, 194, 146, 0.4)
     ),
-    url(/assets/images/hero-large.jpg);
+    url(/assets/images/hero-small.jpg);
   @include bg-image;
   align-content: center;
+  height: 32rem;
+
+  @include md {
+    background-image: linear-gradient(
+        rgba(245, 194, 146, 0.4),
+        rgba(245, 194, 146, 0.4)
+      ),
+      url(/assets/images/hero-large.jpg);
+    height: 100vh;
+  }
 
   .hero-container {
-    grid-column: 2 / 10;
+    position: absolute;
+    bottom: 2rem;
+    @include md {
+      grid-column: 2 / 10;
+    }
   }
 
   .hero-text {
-    padding: 2rem;
+    padding: 1rem;
+
+    @include sm {
+      padding: 2rem;
+    }
   }
 }

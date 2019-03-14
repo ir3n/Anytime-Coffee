@@ -53,7 +53,10 @@ h4 {
   text-align: center; }
 
 .row-smaller-p {
-  padding-top: 2rem; }
+  padding-top: 1rem; }
+  @media (min-width: 480px) {
+    .row-smaller-p {
+      padding-top: 2rem; } }
 
 .wrapper {
   text-align: center;
@@ -102,14 +105,20 @@ h5 {
   text-transform: uppercase; }
 
 h1 {
-  font-size: 1.7rem;
-  line-height: 1.3; }
+  font-size: 1.3rem; }
+  @media (min-width: 810px) {
+    h1 {
+      font-size: 1.7rem;
+      line-height: 1.3; } }
   @media (min-width: 1024px) {
     h1 {
       font-size: 2.2rem; } }
 
 .bigger {
-  font-size: 3.5rem; }
+  font-size: 2.3rem; }
+  @media (min-width: 810px) {
+    .bigger {
+      font-size: 3.5rem; } }
   @media (min-width: 1024px) {
     .bigger {
       font-size: 4rem; } }
@@ -214,14 +223,26 @@ section#intro {
     white-space: nowrap; }
 
 section#hero {
-  background-image: linear-gradient(rgba(245, 194, 146, 0.4), rgba(245, 194, 146, 0.4)), url(/assets/images/hero-large.jpg);
+  background-image: linear-gradient(rgba(245, 194, 146, 0.4), rgba(245, 194, 146, 0.4)), url(/assets/images/hero-small.jpg);
   background-size: cover;
   background-position: center;
-  align-content: center; }
+  align-content: center;
+  height: 32rem; }
+  @media (min-width: 810px) {
+    section#hero {
+      background-image: linear-gradient(rgba(245, 194, 146, 0.4), rgba(245, 194, 146, 0.4)), url(/assets/images/hero-large.jpg);
+      height: 100vh; } }
   section#hero .hero-container {
-    grid-column: 2 / 10; }
+    position: absolute;
+    bottom: 2rem; }
+    @media (min-width: 810px) {
+      section#hero .hero-container {
+        grid-column: 2 / 10; } }
   section#hero .hero-text {
-    padding: 2rem; }
+    padding: 1rem; }
+    @media (min-width: 480px) {
+      section#hero .hero-text {
+        padding: 2rem; } }
 
 section {
   position: relative;
@@ -364,29 +385,40 @@ form {
   form .row-grid-no-p:nth-child(3) {
     text-align: left; }
 
-button {
-  font-size: 1.3rem;
+.btn, .btn-ghost {
   padding: 0.6rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #dfc19b;
   border: 1px solid #f44034;
   background-color: #f44034;
   transition: all 0.3s; }
-  button:hover {
+  @media (min-width: 480px) {
+    .btn, .btn-ghost {
+      font-size: 1rem; } }
+  @media (min-width: 810px) {
+    .btn, .btn-ghost {
+      margin-top: 2rem;
+      font-size: 1.2rem; } }
+  @media (min-width: 1024px) {
+    .btn, .btn-ghost {
+      font-size: 1.3rem; } }
+  .btn:hover, .btn-ghost:hover {
     border: 1px solid #b12a20;
     background-color: #b12a20; }
-  button[type="submit"],
-  button a {
+  .btn[type="submit"], .btn-ghost[type="submit"] {
     color: #dfc19b;
     padding: 0.6rem 1rem; }
 
 .btn-ghost {
   background-color: transparent;
-  margin-left: 1rem; }
-  .btn-ghost a {
-    color: #f44034;
-    transition: all 0.3s; }
-    .btn-ghost a:hover {
-      color: #dfc19b; }
+  color: #f44034;
+  transition: all 0.3s; }
+  @media (min-width: 480px) {
+    .btn-ghost {
+      margin-left: 1rem; } }
+  .btn-ghost:hover {
+    color: #dfc19b; }
 
 .app-btn {
   background-color: transparent;

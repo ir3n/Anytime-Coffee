@@ -35,7 +35,11 @@
 }
 
 .row-smaller-p {
-  padding-top: 2rem;
+  padding-top: 1rem;
+
+  @include sm {
+    padding-top: 2rem;
+  }
 }
 
 .wrapper {
