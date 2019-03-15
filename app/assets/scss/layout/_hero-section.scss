@@ -5,6 +5,7 @@ section#hero {
     ),
     url(/assets/images/hero-small.jpg);
   @include bg-image;
+  background-attachment: fixed;
   align-content: end;
   height: 32rem;
 

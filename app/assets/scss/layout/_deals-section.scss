@@ -3,15 +3,12 @@ section#deals {
     url(/assets/images/nathan-dumlao-290152-unsplash.jpg);
   color: $mainBeige;
   grid-template-rows: 10rem auto 13rem;
+  height: auto;
 
   @include bg-image;
 
-  .row:last-of-type {
-    padding: 0 1rem 2rem 1rem;
-
-    @include md {
-      padding-top: 1rem;
-    }
+  @include lg {
+    height: 100vh;
   }
 
   a {
@@ -23,6 +20,18 @@ section#deals {
       z-index: 5;
     }
   }
+
+  p {
+    margin-top: 1rem;
+  }
+  .row:last-of-type {
+    padding: 0 1rem 2rem 1rem;
+
+    @include md {
+      padding-top: 1rem;
+    }
+  }
+
   .container,
   .row-grid {
     overflow: visible;

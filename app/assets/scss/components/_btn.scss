@@ -1,4 +1,5 @@
-.btn {
+.btn:link,
+.btn:visited {
   padding: 0.6rem;
   margin-top: 1rem;
   font-size: 0.9rem;
@@ -19,7 +20,8 @@
     font-size: 1.3rem;
   }
 
-  &:hover {
+  &:hover,
+  &:active {
     border: 1px solid $darkRed;
     background-color: $darkRed;
   }
@@ -30,9 +32,10 @@
   }
 }
 
-.btn-ghost {
+.btn-ghost:link,
+.btn-ghost:visited {
   @extend .btn;
-  background-color: transparent;
+  background-color: rgba(197, 173, 128, 0.5);
   color: $mainRed;
   @include transition;
 
@@ -40,26 +43,27 @@
     margin-left: 1rem;
   }
 
-  &:hover {
+  &:hover,
+  &:active {
     color: $mainBeige;
   }
 }
 
-.app-btn {
-  background-color: transparent;
-  margin: 0 0 0.5rem 0;
-  padding: 0;
-  border: none;
-  @include transition;
-
-  &:hover {
-    background-color: transparent;
-    border: none;
-    @include scale;
-  }
-
+.app-btn:link,
+.app-btn:visited {
+  margin-right: 1rem;
   img {
-    width: 9rem;
+    width: 7rem;
     height: auto;
+    @include transition;
+
+    @include sm {
+      width: 9rem;
+    }
+
+    &:hover,
+    &:active {
+      @include scale;
+    }
   }
 }

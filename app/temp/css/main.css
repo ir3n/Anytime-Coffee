@@ -136,19 +136,25 @@ section#deals {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/images/nathan-dumlao-290152-unsplash.jpg);
   color: #dfc19b;
   grid-template-rows: 10rem auto 13rem;
+  height: auto;
   background-size: cover;
   background-position: center; }
-  section#deals .row:last-of-type {
-    padding: 0 1rem 2rem 1rem; }
-    @media (min-width: 810px) {
-      section#deals .row:last-of-type {
-        padding-top: 1rem; } }
+  @media (min-width: 1024px) {
+    section#deals {
+      height: 100vh; } }
   section#deals a {
     color: #dfc19b; }
     section#deals a li {
       font-size: 1.1rem;
       margin-bottom: 0.3rem;
       z-index: 5; }
+  section#deals p {
+    margin-top: 1rem; }
+  section#deals .row:last-of-type {
+    padding: 0 1rem 2rem 1rem; }
+    @media (min-width: 810px) {
+      section#deals .row:last-of-type {
+        padding-top: 1rem; } }
   section#deals .container,
   section#deals .row-grid {
     overflow: visible; }
@@ -226,6 +232,7 @@ section#hero {
   background-image: linear-gradient(rgba(245, 194, 146, 0.4), rgba(245, 194, 146, 0.4)), url(/assets/images/hero-small.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   align-content: end;
   height: 32rem; }
   @media (min-width: 810px) {
@@ -407,7 +414,9 @@ form {
   form .row-grid-no-p:nth-child(3) {
     text-align: left; }
 
-.btn, .btn-ghost {
+.btn:link, .btn-ghost:link,
+.btn:visited,
+.btn-ghost:visited {
   padding: 0.6rem;
   margin-top: 1rem;
   font-size: 0.9rem;
@@ -416,46 +425,65 @@ form {
   background-color: #f44034;
   transition: all 0.3s; }
   @media (min-width: 480px) {
-    .btn, .btn-ghost {
+    .btn:link, .btn-ghost:link,
+    .btn:visited,
+    .btn-ghost:visited {
       font-size: 1rem; } }
   @media (min-width: 810px) {
-    .btn, .btn-ghost {
+    .btn:link, .btn-ghost:link,
+    .btn:visited,
+    .btn-ghost:visited {
       margin-top: 2rem;
       font-size: 1.2rem; } }
   @media (min-width: 1024px) {
-    .btn, .btn-ghost {
+    .btn:link, .btn-ghost:link,
+    .btn:visited,
+    .btn-ghost:visited {
       font-size: 1.3rem; } }
-  .btn:hover, .btn-ghost:hover {
+  .btn:link:hover, .btn-ghost:link:hover, .btn:link:active, .btn-ghost:link:active,
+  .btn:visited:hover,
+  .btn-ghost:visited:hover,
+  .btn:visited:active,
+  .btn-ghost:visited:active {
     border: 1px solid #b12a20;
     background-color: #b12a20; }
-  .btn[type="submit"], .btn-ghost[type="submit"] {
+  .btn:link[type="submit"], .btn-ghost:link[type="submit"],
+  .btn:visited[type="submit"],
+  .btn-ghost:visited[type="submit"] {
     color: #dfc19b;
     padding: 0.6rem 1rem; }
 
-.btn-ghost {
-  background-color: transparent;
+.btn-ghost:link,
+.btn-ghost:visited {
+  background-color: rgba(197, 173, 128, 0.5);
   color: #f44034;
   transition: all 0.3s; }
   @media (min-width: 480px) {
-    .btn-ghost {
+    .btn-ghost:link,
+    .btn-ghost:visited {
       margin-left: 1rem; } }
-  .btn-ghost:hover {
+  .btn-ghost:link:hover, .btn-ghost:link:active,
+  .btn-ghost:visited:hover,
+  .btn-ghost:visited:active {
     color: #dfc19b; }
 
-.app-btn {
-  background-color: transparent;
-  margin: 0 0 0.5rem 0;
-  padding: 0;
-  border: none;
-  transition: all 0.3s; }
-  .app-btn:hover {
-    background-color: transparent;
-    border: none;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); }
-  .app-btn img {
-    width: 9rem;
-    height: auto; }
+.app-btn:link,
+.app-btn:visited {
+  margin-right: 1rem; }
+  .app-btn:link img,
+  .app-btn:visited img {
+    width: 7rem;
+    height: auto;
+    transition: all 0.3s; }
+    @media (min-width: 480px) {
+      .app-btn:link img,
+      .app-btn:visited img {
+        width: 9rem; } }
+    .app-btn:link img:hover, .app-btn:link img:active,
+    .app-btn:visited img:hover,
+    .app-btn:visited img:active {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
 
 i {
   font-size: 2.5rem;
@@ -506,7 +534,8 @@ footer i {
     background-color: #f44034;
     width: 30px;
     height: 1px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-bottom: 2rem; }
 
 .card1-of-3 {
   padding: 5% 5% 10% 5%;
