@@ -343,12 +343,7 @@
         </div>
       </div>
 
-      <div id="map">
-        <div class="row">
-          <h2>We are here</h2>
-          <div class="line"></div>
-        </div>
-      </div>
+      <div id="map"></div>
     </section>
 
     <footer>
@@ -370,5 +365,25 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Larissa
+        const place = { lat: 39.637294, lng: 22.409751 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: place
+        });
+        // The marker, positioned at Larissa
+        const marker = new google.maps.Marker({ position: place, map: map });
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGyF6Iu_FkJK5SosT-fJO6q8QaHQrA8gc&callback=initMap"
+    ></script>
   </body>
 </html>
