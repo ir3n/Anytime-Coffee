@@ -4,6 +4,7 @@ form {
   text-align: left;
   max-width: 30rem;
   margin: 1rem auto;
+  white-space: nowrap;
 
   @include sm {
     padding: 3rem 5rem;
@@ -38,6 +39,7 @@ form {
     margin-top: 1rem;
     border-radius: 8px;
     padding: 1rem;
+    display: block;
   }
 
   .row-grid-no-p:first-child,

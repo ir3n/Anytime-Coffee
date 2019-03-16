@@ -1,4 +1,5 @@
 section#contact {
+  padding-bottom: 0;
   @include md {
     @include section-divided;
     grid-template-rows: auto;

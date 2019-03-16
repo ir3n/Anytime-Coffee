@@ -292,24 +292,24 @@ section#snacks {
         -webkit-transform: scale(1);
                 transform: scale(1); }
 
-@media (min-width: 810px) {
-  section#contact {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto; } }
-
-section#contact .contact-bg {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(/assets/images/contact.jpg);
-  background-size: cover;
-  background-position: center; }
-  @media (min-width: 480px) {
-    section#contact .contact-bg {
-      background-image: url(/assets/images/contact.jpg); } }
-
-section#contact .row-grid {
-  display: block; }
+section#contact {
+  padding-bottom: 0; }
   @media (min-width: 810px) {
-    section#contact .row-grid {
-      display: grid; } }
+    section#contact {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto; } }
+  section#contact .contact-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(/assets/images/contact.jpg);
+    background-size: cover;
+    background-position: center; }
+    @media (min-width: 480px) {
+      section#contact .contact-bg {
+        background-image: url(/assets/images/contact.jpg); } }
+  section#contact .row-grid {
+    display: block; }
+    @media (min-width: 810px) {
+      section#contact .row-grid {
+        display: grid; } }
 
 section#how {
   text-align: center; }
@@ -380,7 +380,8 @@ form {
   line-height: 2.5;
   text-align: left;
   max-width: 30rem;
-  margin: 1rem auto; }
+  margin: 1rem auto;
+  white-space: nowrap; }
   @media (min-width: 480px) {
     form {
       padding: 3rem 5rem;
@@ -408,7 +409,8 @@ form {
     margin: 0 auto;
     margin-top: 1rem;
     border-radius: 8px;
-    padding: 1rem; }
+    padding: 1rem;
+    display: block; }
   form .row-grid-no-p:first-child,
   form .row-grid-no-p:nth-child(2),
   form .row-grid-no-p:nth-child(3) {
@@ -416,7 +418,8 @@ form {
 
 .btn:link, .btn-ghost:link,
 .btn:visited,
-.btn-ghost:visited {
+.btn-ghost:visited,
+button {
   padding: 0.6rem;
   margin-top: 1rem;
   font-size: 0.9rem;
@@ -427,29 +430,35 @@ form {
   @media (min-width: 480px) {
     .btn:link, .btn-ghost:link,
     .btn:visited,
-    .btn-ghost:visited {
+    .btn-ghost:visited,
+    button {
       font-size: 1rem; } }
   @media (min-width: 810px) {
     .btn:link, .btn-ghost:link,
     .btn:visited,
-    .btn-ghost:visited {
+    .btn-ghost:visited,
+    button {
       margin-top: 2rem;
       font-size: 1.2rem; } }
   @media (min-width: 1024px) {
     .btn:link, .btn-ghost:link,
     .btn:visited,
-    .btn-ghost:visited {
+    .btn-ghost:visited,
+    button {
       font-size: 1.3rem; } }
   .btn:link:hover, .btn-ghost:link:hover, .btn:link:active, .btn-ghost:link:active,
   .btn:visited:hover,
   .btn-ghost:visited:hover,
   .btn:visited:active,
-  .btn-ghost:visited:active {
+  .btn-ghost:visited:active,
+  button:hover,
+  button:active {
     border: 1px solid #b12a20;
     background-color: #b12a20; }
   .btn:link[type="submit"], .btn-ghost:link[type="submit"],
   .btn:visited[type="submit"],
-  .btn-ghost:visited[type="submit"] {
+  .btn-ghost:visited[type="submit"],
+  button[type="submit"] {
     color: #dfc19b;
     padding: 0.6rem 1rem; }
 
