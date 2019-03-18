@@ -11,6 +11,24 @@ i {
   }
 }
 
+i#menu-button {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  color: $mainBrown;
+  @include right;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include sm {
+    margin-top: 1.3rem;
+  }
+  @include md {
+    display: none;
+  }
+}
+
 footer i {
   color: $lightGray;
   font-size: 2rem;

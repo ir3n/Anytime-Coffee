@@ -21,6 +21,7 @@ section#hero {
   .hero-container {
     position: absolute;
     bottom: 2rem;
+
     @include md {
       grid-column: 2 / 10;
       position: relative;
@@ -32,7 +33,11 @@ section#hero {
     padding: 1rem;
 
     @include sm {
-      padding: 2rem;
+      padding: 2rem 3.5rem;
+    }
+
+    @include md {
+      padding: 1rem;
     }
   }
 }

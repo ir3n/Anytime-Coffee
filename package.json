@@ -17,13 +17,20 @@
   },
   "homepage": "https://github.com/ir3n/Anytime-Coffee#readme",
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "jquery": "^3.3.1",
+    "jquery-smooth-scroll": "^2.2.0",
+    "normalize.css": "^8.0.1",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.9",
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-stream": "^5.2.1"
   }
 }
