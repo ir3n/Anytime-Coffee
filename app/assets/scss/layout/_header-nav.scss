@@ -54,7 +54,8 @@ header {
       padding: 1.5rem 0;
     }
 
-    a {
+    a:link,
+    a:visited {
       display: block;
       width: 100%;
       background-color: $mainBrown;
@@ -64,7 +65,8 @@ header {
 
       @include transition;
 
-      &:hover {
+      &:hover,
+      &:active {
         background-color: $mainRed;
       }
 
@@ -82,7 +84,8 @@ header {
         width: auto;
         opacity: 1;
 
-        &:hover {
+        &:hover,
+        &:active {
           border-bottom: 2px solid $mainRed;
           background-color: transparent;
         }
