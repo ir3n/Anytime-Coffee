@@ -68,3 +68,7 @@
 @mixin white-bg {
   background-color: rgba(255, 255, 255, 0.836);
 }
+
+@mixin hide-left {
+  left: -100%;
+}
