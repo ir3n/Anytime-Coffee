@@ -3,8 +3,9 @@ header {
   width: 100%;
   z-index: 3;
   align-content: center;
-  // background-color: hsla(34, 51%, 74%, 0.849);
-  @include absolute;
+  position: fixed;
+
+  @include transition;
 
   @include sm {
     padding: 0 2rem 0 2rem;
@@ -16,6 +17,7 @@ header {
 
   .logo {
     height: 3.2rem;
+    @include transition;
 
     @include sm {
       height: 3.5rem;
@@ -59,7 +61,7 @@ header {
       display: block;
       width: 100%;
       background-color: $mainBrown;
-      opacity: 0.8;
+      opacity: 0.9;
       color: $mainBeige;
       padding: 0.5rem 1rem 0.5rem 1.5rem;
 
@@ -95,8 +97,31 @@ header {
       }
     }
   }
-  .sticky {
-    position: sticky;
-    background-color: $mainBeige;
+}
+.sticky-header {
+  background-color: $mainBeige;
+  opacity: 0.9;
+
+  @include md {
+    background-image: linear-gradient(
+      to right,
+      #ffdfb1,
+      #c5a982,
+      #3e2622,
+      #3e2622,
+      #3e2622
+    );
+    height: 4rem;
+  }
+
+  nav a:link,
+  nav a:visited {
+    color: $mainBeige;
+  }
+  .logo {
+    padding: 0.1rem;
+    @include lg {
+      padding: 0.5rem;
+    }
   }
 }

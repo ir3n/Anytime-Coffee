@@ -1,20 +1,26 @@
-// import $ from "jquery";
-// import Waypoint from "../../../../node_modules/waypoints/lib/jquery.waypoints";
+import $ from "jquery";
+import waypoints from "../../../../node_modules/waypoints/lib/noframework.waypoints";
 
-// class StickyHeader {
-//   constructor() {
-//     this.header = $("header");
-//     this.createHeaderWaypoint();
-//     //this.createSectionWaypoints();
-//   }
-//   createHeaderWaypoint() {
-//     new Waypoint({
-//       element: document.getElementById("intro"),
-//       handler: function() {
-//         console.log("triggered");
-//       }
-//     });
-//   }
-// }
+class StickyHeader {
+  constructor() {
+    this.header = $("header");
+    this.triggerElement = $(".hero-text");
+    this.createHeaderWaypoint();
+  }
+  createHeaderWaypoint() {
+    let that = this;
+    new Waypoint({
+      element: that.triggerElement[0],
+      handler: function(direction) {
+        if (direction == "down") {
+          that.header.addClass("sticky-header");
+        } else {
+          that.header.removeClass("sticky-header");
+        }
+      },
+      offset: "80px"
+    });
+  }
+}
 
-// export default StickyHeader;
+export default StickyHeader;

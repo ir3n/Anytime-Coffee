@@ -88,9 +88,13 @@ h4 {
 
 .reveal-item {
   opacity: 0;
-  transition: opacity 1.5s ease-out; }
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  transition: all 1.5s ease-out; }
   .reveal-item--is-visible {
-    opacity: 1; }
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
 
 body,
 button,
@@ -183,7 +187,8 @@ header {
   width: 100%;
   z-index: 3;
   align-content: center;
-  position: absolute; }
+  position: fixed;
+  transition: all 0.3s; }
   @media (min-width: 480px) {
     header {
       padding: 0 2rem 0 2rem; } }
@@ -193,7 +198,8 @@ header {
       grid-template-columns: repeat(12, 1fr);
       padding: 0; } }
   header .logo {
-    height: 3.2rem; }
+    height: 3.2rem;
+    transition: all 0.3s; }
     @media (min-width: 480px) {
       header .logo {
         height: 3.5rem; } }
@@ -229,7 +235,7 @@ header {
       display: block;
       width: 100%;
       background-color: #3e2723;
-      opacity: 0.8;
+      opacity: 0.9;
       color: #dfc19b;
       padding: 0.5rem 1rem 0.5rem 1.5rem;
       transition: all 0.3s; }
@@ -261,10 +267,22 @@ header {
         header nav a:link,
         header nav a:visited {
           margin-left: 1.5rem; } }
-  header .sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    background-color: #dfc19b; }
+
+.sticky-header {
+  background-color: #dfc19b;
+  opacity: 0.9; }
+  @media (min-width: 810px) {
+    .sticky-header {
+      background-image: linear-gradient(to right, #ffdfb1, #c5a982, #3e2622, #3e2622, #3e2622);
+      height: 4rem; } }
+  .sticky-header nav a:link,
+  .sticky-header nav a:visited {
+    color: #dfc19b; }
+  .sticky-header .logo {
+    padding: 0.1rem; }
+    @media (min-width: 1024px) {
+      .sticky-header .logo {
+        padding: 0.5rem; } }
 
 section#intro {
   background-color: #c9c9c9; }
