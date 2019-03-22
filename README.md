@@ -6,9 +6,10 @@ I made this to experiment with Sass, CSS- Grid, Gulp automation and Waypoints.
 
 ### Screenshots
 <div>
-  <img src="https://github.com/ir3n/Anytime-Coffee/blob/master/app/assets/images/Screenshots/Anytime-%20Home.jpg" width="300px" title="Anytime- Homepage" />
-  <img src="https://github.com/ir3n/Anytime-Coffee/blob/master/app/assets/images/Screenshots/Anytime-%20Mobile.jpg" width="91px" title="Anytime- Mobile" />
-  <img src="https://github.com/ir3n/Anytime-Coffee/blob/master/app/assets/images/Screenshots/Anytime-%20Deals.jpg" width="306px" title="Anytime- Deals" />
+  <img src="https://github.com/ir3n/Anytime-Coffee/blob/master/app/assets/images/Screenshots/Anytime-%20Home.jpg" width="600px" title="Anytime- Homepage" />
+  <img src="https://github.com/ir3n/Anytime-Coffee/blob/master/app/assets/images/Screenshots/Anytime-%20Mobile.jpg" width="182px" title="Anytime- Mobile" />
+  <img src="https://github.com/ir3n/Anytime-Coffee/blob/master/app/assets/images/Screenshots/Anytime-%20Deals.jpg" width="400px" title="Anytime- Deals" />
+  <img src="https://github.com/ir3n/Anytime-Coffee/blob/master/app/assets/images/Screenshots/Anytime-%20Contact.jpg" width="400px" title="Anytime- Contact" />
 </div>
 
 ### Built with:
