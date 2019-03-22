@@ -7,6 +7,7 @@ const gulp = require("gulp"),
   webpack = require("webpack"),
   webpackConfig = require("./webpack.config"),
   webpackStream = require("webpack-stream"),
+  imagemin = require("gulp-imagemin"),
   autoprefixer = require("autoprefixer");
 
 function browserSync(done) {
@@ -22,6 +23,13 @@ function browserSync(done) {
 function browserSyncReload(done) {
   browsersync.reload();
   done();
+}
+
+function minimizeImages() {
+  return gulp
+    .src("./assets/images/*")
+    .pipe(imagemin())
+    .pipe(gulp.dest("./app/temp/images"));
 }
 
 function css() {
@@ -45,10 +53,12 @@ function watchFiles() {
   gulp.watch("./app/assets/scss/**/*.scss", css);
   gulp.watch("./app/assets/scripts/**/*", scripts);
   gulp.watch("./app/*.html", browserSyncReload);
+  gulp.watch("./app/assets/images/*", minimizeImages);
 }
 
 const watch = gulp.parallel(watchFiles, browserSync);
 
+exports.images = minimizeImages;
 exports.css = css;
 exports.watch = watch;
 exports.default = watch;
