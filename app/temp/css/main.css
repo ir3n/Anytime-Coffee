@@ -42,10 +42,14 @@ h4 {
 .row-grid-no-p {
   grid-column: span 12; }
 
-.row {
+.row, .section-row {
   grid-column: span 12;
   padding-top: 3rem;
   text-align: center; }
+
+@media (min-width: 810px) {
+  .section-row {
+    padding-top: 6rem; } }
 
 .row-grid {
   display: grid;
@@ -148,7 +152,7 @@ footer {
 section#deals {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/temp/images/deals-bg.jpg);
   color: #dfc19b;
-  grid-template-rows: 10rem auto 13rem;
+  grid-template-rows: 12rem auto 13rem;
   height: auto;
   background-size: cover;
   background-position: center; }
@@ -163,10 +167,10 @@ section#deals {
       z-index: 5; }
   section#deals p {
     margin-top: 1rem; }
-  section#deals .row:last-of-type {
+  section#deals .row:last-of-type, section#deals .section-row:last-of-type {
     padding: 0 1rem 2rem 1rem; }
     @media (min-width: 810px) {
-      section#deals .row:last-of-type {
+      section#deals .row:last-of-type, section#deals .section-row:last-of-type {
         padding-top: 1rem; } }
   section#deals .container,
   section#deals .row-grid {
@@ -275,7 +279,7 @@ header {
   opacity: 0.9; }
   @media (min-width: 810px) {
     .sticky-header {
-      background-image: linear-gradient(to right, #ffdfb1, #c5a982, #3e2622, #3e2622, #3e2622);
+      background-image: linear-gradient(to right, #fcd9a9, #d4ae78, #1a0d0b, #110706, #0a0403);
       height: 4rem; } }
   .sticky-header nav a:link,
   .sticky-header nav a:visited {
@@ -296,9 +300,12 @@ section#intro {
   background-color: #dfc19b; }
   @media (min-width: 810px) {
     section#intro {
-      grid-template-rows: 10rem 9rem auto; } }
+      grid-template-rows: 10rem 11rem auto; } }
   section#intro h3 {
     white-space: nowrap; }
+  @media (min-width: 810px) {
+    section#intro .container-smaller p {
+      padding-top: 2rem; } }
 
 section#hero {
   background-image: linear-gradient(rgba(245, 194, 146, 0.4), rgba(245, 194, 146, 0.4)), url(/temp/images/hero-small.jpg);
@@ -357,7 +364,8 @@ section#snacks {
     @media (min-width: 810px) {
       section#snacks .image-grid {
         display: grid;
-        grid-template-rows: repeat(3, 33.3%); } }
+        grid-template-rows: 39% 35% 25%;
+        margin-top: -3rem; } }
     section#snacks .image-grid img {
       max-width: 100%;
       -webkit-transform: scale(1.2);
@@ -406,6 +414,9 @@ section#how {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/temp/images/how-it-works.jpg);
     background-size: cover;
     background-position: center; }
+    @media (min-width: 810px) {
+      section#how .how-bg {
+        margin-top: -3rem; } }
 
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/temp/images/footer.jpg);
@@ -539,7 +550,7 @@ button {
 
 .btn-ghost:link,
 .btn-ghost:visited {
-  background-color: rgba(197, 173, 128, 0.5);
+  background-color: rgba(216, 196, 159, 0.5);
   color: #f44034;
   transition: all 0.3s; }
   @media (min-width: 480px) {

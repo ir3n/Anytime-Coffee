@@ -2,7 +2,7 @@ section#deals {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(/temp/images/deals-bg.jpg);
   color: $mainBeige;
-  grid-template-rows: 10rem auto 13rem;
+  grid-template-rows: 12rem auto 13rem;
   height: auto;
 
   @include bg-image;

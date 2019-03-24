@@ -2,9 +2,14 @@ section#intro {
   background-color: $mainBeige;
 
   @include md {
-    grid-template-rows: 10rem 9rem auto;
+    grid-template-rows: 10rem 11rem auto;
   }
   h3 {
     white-space: nowrap;
+  }
+  .container-smaller p {
+    @include md {
+      padding-top: 2rem;
+    }
   }
 }

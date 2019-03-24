@@ -28,6 +28,12 @@
   padding-top: 3rem;
   @include center;
 }
+.section-row {
+  @extend .row;
+  @include md {
+    padding-top: 6rem;
+  }
+}
 
 .row-grid {
   @include grid;

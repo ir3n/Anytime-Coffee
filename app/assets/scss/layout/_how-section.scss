@@ -23,5 +23,9 @@ section#how {
       url(/temp/images/how-it-works.jpg);
 
     @include bg-image;
+
+    @include md {
+      margin-top: -3rem;
+    }
   }
 }

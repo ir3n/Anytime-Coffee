@@ -36,7 +36,7 @@ button {
 .btn-ghost:link,
 .btn-ghost:visited {
   @extend .btn;
-  background-color: rgba(197, 173, 128, 0.5);
+  background-color: rgba(216, 196, 159, 0.5);
   color: $mainRed;
   @include transition;
 
