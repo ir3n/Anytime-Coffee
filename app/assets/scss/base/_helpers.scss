@@ -30,6 +30,7 @@
 }
 .section-row {
   @extend .row;
+  padding-top: 4rem;
   @include md {
     padding-top: 6rem;
   }

@@ -3,7 +3,7 @@ section#snacks {
       rgba(238, 211, 176, 0.7),
       rgba(238, 211, 176, 0.7)
     ),
-    url(temp/images/snacks-01.jpg);
+    url(/temp/images/snacks-01.jpg);
   @include bg-image;
 
   @include md {

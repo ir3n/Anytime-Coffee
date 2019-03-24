@@ -12,8 +12,8 @@ i {
 }
 
 i#menu-button {
-  font-size: 1.3rem;
-  margin-top: 1rem;
+  font-size: 1.2rem;
+  margin-top: 1.1rem;
   color: $mainBrown;
   @include right;
   @include transition;
@@ -23,7 +23,7 @@ i#menu-button {
   }
 
   @include sm {
-    margin-top: 1.3rem;
+    font-size: 1.3rem;
   }
   @include md {
     display: none;

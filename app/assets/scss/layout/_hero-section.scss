@@ -9,6 +9,9 @@ section#hero {
   align-content: end;
   height: 32rem;
 
+  @include sm {
+  }
+
   @include md {
     background-image: linear-gradient(
         rgba(245, 194, 146, 0.4),
