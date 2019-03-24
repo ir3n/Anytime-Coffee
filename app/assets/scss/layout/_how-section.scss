@@ -20,7 +20,7 @@ section#how {
   }
   .how-bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(/assets/images/how-it-works.jpg);
+      url(/temp/images/how-it-works.jpg);
 
     @include bg-image;
   }

@@ -9,11 +9,11 @@ section#contact {
         rgba(255, 255, 255, 0.6),
         rgba(255, 255, 255, 0.6)
       ),
-      url(/assets/images/contact.jpg);
+      url(/temp/images/contact.jpg);
     @include bg-image;
 
     @include sm {
-      background-image: url(/assets/images/contact.jpg);
+      background-image: url(/temp/images/contact.jpg);
     }
   }
 

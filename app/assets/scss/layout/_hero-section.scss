@@ -3,7 +3,7 @@ section#hero {
       rgba(245, 194, 146, 0.4),
       rgba(245, 194, 146, 0.4)
     ),
-    url(/assets/images/hero-small.jpg);
+    url(/temp/images/hero-small.jpg);
   @include bg-image;
   background-attachment: fixed;
   align-content: end;
@@ -14,7 +14,7 @@ section#hero {
         rgba(245, 194, 146, 0.4),
         rgba(245, 194, 146, 0.4)
       ),
-      url(/assets/images/hero-large.jpg);
+      url(/temp/images/hero-large.jpg);
     height: 100vh;
   }
 

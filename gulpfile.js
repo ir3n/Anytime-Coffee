@@ -25,9 +25,9 @@ function browserSyncReload(done) {
   done();
 }
 
-function minimizeImages() {
+function images() {
   return gulp
-    .src("./assets/images/*")
+    .src("./app/assets/images/*")
     .pipe(imagemin())
     .pipe(gulp.dest("./app/temp/images"));
 }
@@ -53,12 +53,12 @@ function watchFiles() {
   gulp.watch("./app/assets/scss/**/*.scss", css);
   gulp.watch("./app/assets/scripts/**/*", scripts);
   gulp.watch("./app/*.html", browserSyncReload);
-  gulp.watch("./app/assets/images/*", minimizeImages);
+  gulp.watch("./app/assets/images/*", images);
 }
 
 const watch = gulp.parallel(watchFiles, browserSync);
 
-exports.images = minimizeImages;
+exports.images = images;
 exports.css = css;
 exports.watch = watch;
 exports.default = watch;

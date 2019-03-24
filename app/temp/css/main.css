@@ -146,7 +146,7 @@ footer {
   font-size: 1rem; }
 
 section#deals {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/images/nathan-dumlao-290152-unsplash.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/temp/images/deals-bg.jpg);
   color: #dfc19b;
   grid-template-rows: 10rem auto 13rem;
   height: auto;
@@ -293,7 +293,7 @@ header {
       left: 2rem; } }
 
 section#intro {
-  background-color: #c9c9c9; }
+  background-color: #dfc19b; }
   @media (min-width: 810px) {
     section#intro {
       grid-template-rows: 10rem 9rem auto; } }
@@ -301,7 +301,7 @@ section#intro {
     white-space: nowrap; }
 
 section#hero {
-  background-image: linear-gradient(rgba(245, 194, 146, 0.4), rgba(245, 194, 146, 0.4)), url(/assets/images/hero-small.jpg);
+  background-image: linear-gradient(rgba(245, 194, 146, 0.4), rgba(245, 194, 146, 0.4)), url(/temp/images/hero-small.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -309,7 +309,7 @@ section#hero {
   height: 32rem; }
   @media (min-width: 810px) {
     section#hero {
-      background-image: linear-gradient(rgba(245, 194, 146, 0.4), rgba(245, 194, 146, 0.4)), url(/assets/images/hero-large.jpg);
+      background-image: linear-gradient(rgba(245, 194, 146, 0.4), rgba(245, 194, 146, 0.4)), url(/temp/images/hero-large.jpg);
       height: 100vh; } }
   section#hero .hero-container {
     position: absolute;
@@ -342,7 +342,7 @@ section {
       grid-template-columns: repeat(12, 1fr); } }
 
 section#snacks {
-  background-image: linear-gradient(rgba(238, 211, 176, 0.7), rgba(238, 211, 176, 0.7)), url(/assets/images/snacks-01.jpg);
+  background-image: linear-gradient(rgba(238, 211, 176, 0.7), rgba(238, 211, 176, 0.7)), url(temp/images/snacks-01.jpg);
   background-size: cover;
   background-position: center;
   grid-template-columns: repeat(2, 1fr);
@@ -374,12 +374,12 @@ section#contact {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto; } }
   section#contact .contact-bg {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(/assets/images/contact.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(/temp/images/contact.jpg);
     background-size: cover;
     background-position: center; }
     @media (min-width: 480px) {
       section#contact .contact-bg {
-        background-image: url(/assets/images/contact.jpg); } }
+        background-image: url(/temp/images/contact.jpg); } }
   section#contact .row-grid {
     display: block; }
     @media (min-width: 810px) {
@@ -403,12 +403,12 @@ section#how {
       section#how .num {
         grid-column: span 1; } }
   section#how .how-bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/images/how-it-works.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/temp/images/how-it-works.jpg);
     background-size: cover;
     background-position: center; }
 
 footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/images/footer.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/temp/images/footer.jpg);
   background-size: cover;
   background-position: center;
   color: #c9c9c9;
@@ -439,7 +439,7 @@ footer {
     align-items: center; }
 
 section#testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/images/coffee-beans-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/temp/images/coffee-beans-bg.jpg);
   grid-template-rows: 10rem 9rem auto;
   color: #dfc19b;
   background-size: cover;
