@@ -1,14 +1,14 @@
 "use strict";
 
 const gulp = require("gulp"),
+  autoprefixer = require("autoprefixer"),
   browsersync = require("browser-sync").create(),
-  sass = require("gulp-sass"),
+  imagemin = require("gulp-imagemin"),
   postcss = require("gulp-postcss"),
+  sass = require("gulp-sass"),
   webpack = require("webpack"),
   webpackConfig = require("./webpack.config"),
-  webpackStream = require("webpack-stream"),
-  imagemin = require("gulp-imagemin"),
-  autoprefixer = require("autoprefixer");
+  webpackStream = require("webpack-stream");
 
 function browserSync(done) {
   browsersync.init({
@@ -36,7 +36,15 @@ function css() {
   return gulp
     .src("./app/assets/scss/**/*.scss")
     .pipe(sass())
-    .pipe(postcss([autoprefixer()]))
+    .pipe(gulp.dest("./app/temp/css/"))
+    .pipe(
+      postcss([
+        autoprefixer({
+          browsers: ["last 99 versions"],
+          cascade: false
+        })
+      ])
+    )
     .pipe(gulp.dest("./app/temp/css/"))
     .pipe(browsersync.stream());
 }
