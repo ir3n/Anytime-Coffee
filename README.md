@@ -12,7 +12,7 @@ I made this to experiment with Sass, CSS- Grid, Gulp automation and Waypoints.
   <img src="https://github.com/ir3n/Anytime-Coffee/blob/master/app/assets/images/Screenshots/home-screenshot.jpg" width="600px" title="Anytime- Homepage" />
   <img src="https://github.com/ir3n/Anytime-Coffee/blob/master/app/assets/images/Screenshots/mobile-screenshot.jpg" width="182px" title="Anytime- Mobile" />
   <img src="https://github.com/ir3n/Anytime-Coffee/blob/master/app/assets/images/Screenshots/deals-screenshot.jpg" width="434px" title="Anytime- Deals" />
-  <img src="https://github.com/ir3n/Anytime-Coffee/blob/master/app/assets/images/Screenshots/contact-screenshot.jpg" width="364px" title="Anytime- Contact" />
+  <img src="https://github.com/ir3n/Anytime-Coffee/blob/master/app/assets/images/Screenshots/contact-screenshot.jpg" width="121px" title="Anytime- Contact" />
 </div>
 
 ### Built with:
